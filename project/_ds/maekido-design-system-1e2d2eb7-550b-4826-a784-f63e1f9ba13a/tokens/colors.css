@@ -1,0 +1,71 @@
+/* ============================================================
+   Maekido — Color tokens
+   Warm, bold, empowering. Ink + cream foundation, a playful
+   maker-spectrum of accents (Sun, Coral, Mint, Sky, Violet).
+   ============================================================ */
+:root {
+  /* —— Base palette —————————————————————————————— */
+  --mk-ink:        #0D0D0D;  /* near-black, primary text + dark surfaces */
+  --mk-white:      #FFFFFF;
+  --mk-cream:      #FAF7F2;  /* page background, light surfaces */
+  --mk-warm:       #F5EFE6;  /* alternate section background */
+
+  --mk-sun:        #F5C842;  /* active states, highlights, dots */
+  --mk-coral:      #FF6B4A;  /* primary accent, CTAs, logo mark */
+  --mk-mint:       #3DD6A3;  /* success, positive feedback */
+  --mk-sky:        #4AB8FF;  /* information, links */
+  --mk-violet:     #8B5CF6;  /* premium, creative accent */
+
+  --mk-ink2:       #1A1A2E;  /* navy secondary dark surface */
+  --mk-mid:        #6B7280;  /* secondary text, placeholders */
+
+  /* —— Accessible "on-tint" text shades (for soft chips) ——— */
+  --mk-sun-ink:    #B58900;
+  --mk-coral-ink:  #FF6B4A;
+  --mk-mint-ink:   #1A9970;
+  --mk-sky-ink:    #1A7AB8;
+  --mk-violet-ink: #8B5CF6;
+
+  /* —— Soft tints (15–20% washes used on cards/chips) ——————— */
+  --mk-coral-soft:  rgba(255, 107, 74, 0.15);
+  --mk-sun-soft:    rgba(245, 200, 66, 0.20);
+  --mk-mint-soft:   rgba(61, 214, 163, 0.15);
+  --mk-sky-soft:    rgba(74, 184, 255, 0.15);
+  --mk-violet-soft: rgba(139, 92, 246, 0.15);
+
+  /* —— Pastel icon-tile gradients (135deg, light→mid of each hue) —— */
+  --mk-tile-sun:    linear-gradient(135deg, #FFF4C2, #FFDB5C);  /* @kind color */
+  --mk-tile-coral:  linear-gradient(135deg, #FFE4DE, #FF9980);  /* @kind color */
+  --mk-tile-mint:   linear-gradient(135deg, #D4F5EA, #6FEBC4);  /* @kind color */
+  --mk-tile-sky:    linear-gradient(135deg, #DDEEFF, #99CCFF);  /* @kind color */
+  --mk-tile-violet: linear-gradient(135deg, #EAE2FE, #B79CFA);  /* @kind color */
+
+  /* —— Hairlines & alpha ink —————————————————————— */
+  --mk-line:        rgba(13, 13, 13, 0.10);
+  --mk-line-strong: rgba(13, 13, 13, 0.14);
+  --mk-ink-60:      rgba(13, 13, 13, 0.60);
+  --mk-on-dark-60:  rgba(255, 255, 255, 0.60);
+  --mk-on-dark-35:  rgba(255, 255, 255, 0.35);
+
+  /* —— Semantic aliases —————————————————————————— */
+  --surface-page:    var(--mk-cream);
+  --surface-warm:    var(--mk-warm);
+  --surface-card:    var(--mk-white);
+  --surface-dark:    var(--mk-ink);
+  --surface-navy:    var(--mk-ink2);
+
+  --text-primary:    var(--mk-ink);
+  --text-secondary:  var(--mk-mid);
+  --text-on-dark:    var(--mk-white);
+  --text-on-dark-muted: var(--mk-on-dark-60);
+
+  --accent:          var(--mk-coral);
+  --accent-hover:    var(--mk-ink);
+  --accent-press:    #E14A2E;
+  --highlight:       var(--mk-sun);
+  --link:            var(--mk-sky);
+  --success:         var(--mk-mint);
+
+  --border-subtle:   var(--mk-line);
+  --border-ink:      var(--mk-ink);
+}
