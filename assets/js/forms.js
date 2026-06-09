@@ -19,7 +19,7 @@ async function submitContact() {
   try {
     await fetch(SHEETS_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      mode: 'no-cors',
       body: JSON.stringify({ form_type: 'contact', first_name: fname, last_name: lname, email, role, interest, message })
     });
     showToast('Message sent! We\'ll respond within 24 hours 📬');
@@ -57,7 +57,7 @@ async function submitEnroll() {
   try {
     await fetch(SHEETS_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      mode: 'no-cors',
       body: JSON.stringify({ form_type: 'partnership', name, role, email, phone, school_name: school, city, student_count: size, grades, programs_selected: programs, format, notes })
     });
     showToast('Partnership enquiry submitted! We\'ll be in touch within 24 hours 🎉');
@@ -85,7 +85,7 @@ async function subNewsletter() {
   try {
     await fetch(SHEETS_URL, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      mode: 'no-cors',
       body: JSON.stringify({ form_type: 'newsletter', email })
     });
     showToast('Subscribed! Welcome to the Maekido community 🎉');
