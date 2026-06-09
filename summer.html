@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer 2026 — Maekido</title>
+<meta name="description" content="See what students built this summer at Maekido — UI/UX, game design, art and legal-literacy projects from our 2026 cohort.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="summer">
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cring"></div>
+<div class="toast" id="toast"></div>
+
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html" id="navLogo"><img class="logo-svg" src="assets/images/logo-black.svg" alt="Maekido" style="display:block;width:128px;height:43px"></a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-page="home">Home</a></li>
+    <li><a href="summer.html" data-page="summer">Summer 2026</a></li>
+    <li><a href="programs.html" data-page="programs">Programs</a></li>
+    <li><a href="about.html" data-page="about">About</a></li>
+    <li><a href="blog.html" data-page="blog">Blog</a></li>
+    <li><a href="contact.html" data-page="contact">Contact</a></li>
+    <li><a class="nav-cta" href="partner.html">Partner With Us →</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="index.html" data-page="home">Home</a>
+  <a href="summer.html" data-page="summer">Summer 2026</a>
+  <a href="programs.html" data-page="programs">Programs</a>
+  <a href="about.html" data-page="about">About</a>
+  <a href="blog.html" data-page="blog">Blog</a>
+  <a href="contact.html" data-page="contact">Contact</a>
+  <a href="partner.html" style="color:var(--coral);margin-top:8px">Partner With Us →</a>
+</div>
+
+  <div class="summer-hero">
+    <div class="sh-inner">
+      <div class="sec-label sl-dark">Summer 2026</div>
+      <h1 class="d2" style="color:#fff;max-width:720px">We proved the concept.<br><em style="color:var(--sun)">Now we're bringing it to schools.</em></h1>
+      <p style="font-size:1.05rem;color:rgba(255,255,255,.55);max-width:600px;margin-top:20px;line-height:1.75">Summer 2026 was Maekido's first major program season. Four programs. Real students. Real outcomes. Everything you see below happened — and now we're bringing these programs to schools across India.</p>
+    </div>
+  </div>
+  <div class="summer-stats-row">
+    <div class="ssr-inner">
+      <div class="ss-card"><div class="ss-num" style="color:var(--coral)">80+</div><div class="ss-lbl">Students who participated across all four programs</div></div>
+      <div class="ss-card"><div class="ss-num" style="color:var(--sun)">4</div><div class="ss-lbl">Different programs delivered successfully</div></div>
+      <div class="ss-card"><div class="ss-num" style="color:var(--mint)">100%</div><div class="ss-lbl">Parent satisfaction rate in post-program surveys</div></div>
+      <div class="ss-card"><div class="ss-num" style="color:var(--violet)">4</div><div class="ss-lbl">Weeks of full immersive program delivery</div></div>
+    </div>
+  </div>
+  <div class="program-blocks">
+    <div class="pb-inner">
+      <!-- UI/UX -->
+      <div class="prog-block">
+        <div class="pb-grid">
+          <div class="pb-media" style="background:linear-gradient(135deg,#edf6ff,#d0eaff)">
+            <div class="pb-play" onclick="showToast('Video coming soon — our content team is editing! 🎬')"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <div class="pb-media-lbl">Watch: Students present their Figma prototypes<br><span style="font-size:.75rem;opacity:.7">— Testimonial video coming soon</span></div>
+          </div>
+          <div>
+            <span class="tag t-sky" style="margin-bottom:16px;display:inline-block">Beginners UI/UX Design</span>
+            <h2 class="pb-h">From zero to Figma —<br>in two weeks.</h2>
+            <p class="pb-p">80% of students had never opened Figma before. By the end of the program, every single one had a complete app prototype they could show to anyone. The energy at the final presentation was electric.</p>
+            <ul class="pb-outs">
+              <li style="--c:var(--sky)"><span style="width:19px;height:19px;border-radius:50%;background:var(--sky);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Students built complete app wireframes in Figma</li>
+              <li style="--c:var(--sky)"><span style="width:19px;height:19px;border-radius:50%;background:var(--sky);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Conducted real user research interviews with classmates</li>
+              <li style="--c:var(--sky)"><span style="width:19px;height:19px;border-radius:50%;background:var(--sky);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Presented final designs to parents and guests</li>
+              <li style="--c:var(--sky)"><span style="width:19px;height:19px;border-radius:50%;background:var(--sky);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Left with a portfolio piece and new career interest</li>
+            </ul>
+            <div class="pb-quote"><p class="pb-q-text">"I designed my first app and my parents couldn't believe it was made by me. I want to be a UI designer now."</p><div class="pb-q-attr">— Aryan, Grade 9 · UI/UX Design Camp 2026</div></div>
+            <a class="btn btn-primary btn-sm" href="partner.html">Bring to your school →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Gamers Lab -->
+      <div class="prog-block" style="background:var(--warm);padding:72px 5%">
+        <div class="pb-grid rev">
+          <div class="pb-media" style="background:linear-gradient(135deg,#fff1ee,#ffe0d8)">
+            <div class="pb-play" onclick="showToast('Video coming soon! 🎬')"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <div class="pb-media-lbl">Watch: Gamers Lab showcase day<br><span style="font-size:.75rem;opacity:.7">— Testimonial video coming soon</span></div>
+          </div>
+          <div>
+            <span class="tag t-coral" style="margin-bottom:16px;display:inline-block">Gamers Lab · Board Game Design</span>
+            <h2 class="pb-h">They didn't just<br>play games — they <em style="color:var(--coral)">made</em> them.</h2>
+            <p class="pb-p">Groups of 3–4 students designed original board games. The rules had to be clear enough for anyone to understand, the mechanics had to be balanced, and the experience had to be fun. That's a harder brief than most adults get at work.</p>
+            <ul class="pb-outs">
+              <li><span style="width:19px;height:19px;border-radius:50%;background:var(--coral);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Designed original board game from blank paper to prototype</li>
+              <li><span style="width:19px;height:19px;border-radius:50%;background:var(--coral);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Learned systems thinking through game mechanics</li>
+              <li><span style="width:19px;height:19px;border-radius:50%;background:var(--coral);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Ran playtesting sessions and iterated based on feedback</li>
+              <li><span style="width:19px;height:19px;border-radius:50%;background:var(--coral);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Presented finished games to families at showcase</li>
+            </ul>
+            <div class="pb-quote"><p class="pb-q-text">"The Gamers Lab was the first time I saw my son genuinely excited to fail at something and try again. That's what learning should look like."</p><div class="pb-q-attr">— Rajesh Kumar · Parent, Gamers Lab 2026</div></div>
+            <a class="btn btn-primary btn-sm" href="partner.html">Bring to your school →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Makers Canvas -->
+      <div class="prog-block">
+        <div class="pb-grid">
+          <div class="pb-media" style="background:linear-gradient(135deg,#fff9e6,#fff0b3)">
+            <div class="pb-play" onclick="showToast('Video coming soon! 🎬')"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <div class="pb-media-lbl">Watch: Makers Canvas exhibition<br><span style="font-size:.75rem;opacity:.7">— Testimonial video coming soon</span></div>
+          </div>
+          <div>
+            <span class="tag t-sun" style="margin-bottom:16px;display:inline-block">Makers Canvas · Mandala &amp; Mosaic Art</span>
+            <h2 class="pb-h">Patience, patterns,<br>and <em style="color:var(--sun)">pure creativity.</em></h2>
+            <p class="pb-p">This was the program that surprised everyone the most. Students — including those who'd never considered themselves artistic — spent hours in deep, focused creative flow. Parents were stunned. Teachers asked if we could run it every term.</p>
+            <ul class="pb-outs">
+              <li><span style="width:19px;height:19px;border-radius:50%;background:var(--sun);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:var(--ink)">✓</span>Created complete Mandala artworks from scratch</li>
+              <li><span style="width:19px;height:19px;border-radius:50%;background:var(--sun);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:var(--ink)">✓</span>Built Mosaic pieces using colour theory and composition</li>
+              <li><span style="width:19px;height:19px;border-radius:50%;background:var(--sun);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:var(--ink)">✓</span>Developed focus, patience and mindful practice</li>
+              <li><span style="width:19px;height:19px;border-radius:50%;background:var(--sun);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:var(--ink)">✓</span>Exhibited finished artwork at end-of-program showcase</li>
+            </ul>
+            <div class="pb-quote"><p class="pb-q-text">"My daughter has ADHD and she sat for 3 hours working on her Mandala without looking up once. I was in tears. This was exactly what she needed."</p><div class="pb-q-attr">— Parent · Makers Canvas 2026</div></div>
+            <a class="btn btn-primary btn-sm" href="partner.html">Bring to your school →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project Abhay -->
+      <div class="prog-block" style="background:var(--warm);padding:72px 5%">
+        <div class="pb-grid rev">
+          <div class="pb-media" style="background:linear-gradient(135deg,#edfbf5,#c5f5e5)">
+            <div class="pb-play" onclick="showToast('Video coming soon! 🎬')"><svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg></div>
+            <div class="pb-media-lbl">Watch: Project Abhay presentations<br><span style="font-size:.75rem;opacity:.7">— Testimonial video coming soon</span></div>
+          </div>
+          <div>
+            <span class="tag t-mint" style="margin-bottom:16px;display:inline-block">Project Abhay · Legal Literacy</span>
+            <h2 class="pb-h">Every student deserves<br>to know <em style="color:var(--mint)">their rights.</em></h2>
+            <p class="pb-p">Project Abhay tackled something no other program does — making the law feel personal, relevant, and empowering for young people. Students left not just knowing their rights, but feeling ownership over them for the first time.</p>
+            <ul class="pb-outs">
+              <li><span style="width:19px;height:19px;border-radius:50%;background:var(--mint);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Learned fundamental rights and child protection laws</li>
+              <li><span style="width:19px;height:19px;border-radius:50%;background:var(--mint);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Ran interactive mock courtroom sessions</li>
+              <li><span style="width:19px;height:19px;border-radius:50%;background:var(--mint);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Discussed real case studies relevant to teenagers</li>
+              <li><span style="width:19px;height:19px;border-radius:50%;background:var(--mint);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Created community awareness posters for their schools</li>
+            </ul>
+            <div class="pb-quote"><p class="pb-q-text">"Project Abhay gave my students something no textbook has — the feeling that the law belongs to them. Every school should run this program."</p><div class="pb-q-attr">— Ms. Divya Nair · Teacher, Project Abhay Observer 2026</div></div>
+            <a class="btn btn-primary btn-sm" href="partner.html">Bring to your school →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ SUMMER MEDIA GALLERY ═══ -->
+  <div id="summer-gallery" style="background:var(--ink);padding:100px 5%;position:relative;overflow:hidden">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse at 30% 60%,rgba(245,200,66,.07),transparent 55%),radial-gradient(ellipse at 80% 20%,rgba(255,107,74,.06),transparent 50%);pointer-events:none"></div>
+    <div style="max-width:var(--max);margin:0 auto;position:relative;z-index:1">
+
+      <!-- Header -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:64px" class="fu">
+        <div>
+          <div class="sec-label sl-dark">Summer 2026 — In the Room</div>
+          <h2 class="d2" style="color:#fff">The moments that<br><em style="color:var(--sun)">made it real.</em></h2>
+          <p style="color:rgba(255,255,255,.5);font-size:1rem;line-height:1.75;margin-top:16px">From first sketches to final showcases — a glimpse inside what Summer 2026 actually looked and felt like.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <!-- Filter tabs -->
+          <div style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.3);margin-bottom:4px">Filter by program</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap" id="gallery-filters">
+            <button class="gf-btn active" onclick="filterGallery('all')">All</button>
+            <button class="gf-btn" onclick="filterGallery('uiux')">🎨 UI/UX</button>
+            <button class="gf-btn" onclick="filterGallery('games')">🎲 Gamers Lab</button>
+            <button class="gf-btn" onclick="filterGallery('canvas')">🖌️ Makers Canvas</button>
+            <button class="gf-btn" onclick="filterGallery('abhay')">⚖️ Project Abhay</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Upload CTA strip -->
+      <div style="background:rgba(245,200,66,.1);border:1.5px dashed rgba(245,200,66,.35);border-radius:20px;padding:20px 28px;margin-bottom:48px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap" class="fu">
+        <div style="display:flex;align-items:center;gap:14px">
+          <span style="font-size:1.8rem">📸</span>
+          <div>
+            <div style="font-weight:700;color:#fff;font-size:.95rem;margin-bottom:3px">Your content goes here</div>
+            <div style="font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.5">Replace the placeholder tiles below with real photos and videos from Summer 2026. Each tile has a program tag and caption ready to edit.</div>
+          </div>
+        </div>
+        <button class="btn btn-sun btn-sm" onclick="showToast('Add your photos & videos to the gallery tiles below 📸')">How to add media →</button>
+      </div>
+
+      <!-- FEATURED VIDEO — full width -->
+      <div class="gallery-item g-all fu" style="margin-bottom:20px">
+        <div style="position:relative;border-radius:24px;overflow:hidden;background:linear-gradient(135deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.1);aspect-ratio:16/6;display:flex;align-items:center;justify-content:center;cursor:pointer" onclick="openLightbox('featured')">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(245,200,66,.08),rgba(255,107,74,.06))"></div>
+          <!-- placeholder gradient for featured video -->
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:20px;z-index:1">
+            <div style="width:80px;height:80px;background:rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid rgba(255,255,255,.3);transition:all .3s;cursor:pointer" class="featured-play">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="white" style="margin-left:3px"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+            <div style="text-align:center">
+              <div style="font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;color:#fff;margin-bottom:6px">Summer 2026 — Full Highlights Reel</div>
+              <div style="font-size:.82rem;color:rgba(255,255,255,.4)">4 programs · 80+ students · One incredible summer</div>
+            </div>
+          </div>
+          <div style="position:absolute;bottom:20px;right:20px;z-index:2">
+            <span class="tag" style="background:rgba(245,200,66,.2);color:var(--sun)">🎬 Highlight Video</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MASONRY-STYLE GRID -->
+      <div id="gallery-grid" style="display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:200px;gap:16px">
+
+        <!-- Row 1: 3 items — wide + medium + medium -->
+        <!-- Item 1: UI/UX — wide (spans 5 cols, 2 rows) -->
+        <div class="gallery-item g-all g-uiux fu" style="grid-column:span 5;grid-row:span 2;border-radius:20px;overflow:hidden;position:relative;cursor:pointer;background:linear-gradient(135deg,#1a3a5c,#0d2440)" onclick="openLightbox('uiux-1')">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px">
+            <span style="font-size:3.5rem">🎨</span>
+            <div style="text-align:center;padding:0 16px">
+              <div style="font-size:.7rem;font-weight:700;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px">Add your photo here</div>
+              <div style="font-size:.82rem;color:rgba(255,255,255,.5)">Students at their desks</div>
+            </div>
+          </div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6) 0%,transparent 50%)"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:18px 20px;display:flex;align-items:flex-end;justify-content:space-between">
+            <div>
+              <span class="tag t-sky" style="margin-bottom:7px;display:inline-block">🎨 UI/UX Design</span>
+              <div style="font-family:'Fraunces',serif;font-size:1rem;font-weight:700;color:#fff">Designing in Figma</div>
+              <div style="font-size:.75rem;color:rgba(255,255,255,.5);margin-top:2px">Day 3 · Wireframing session</div>
+            </div>
+            <div style="width:36px;height:36px;background:rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0">📷</div>
+          </div>
+        </div>
+
+        <!-- Item 2: Video — Gamers Lab (spans 4 cols, 1 row) -->
+        <div class="gallery-item g-all g-games fu d1s" style="grid-column:span 4;border-radius:20px;overflow:hidden;position:relative;cursor:pointer;background:linear-gradient(135deg,#3d1a0a,#7a2e0a)" onclick="openLightbox('games-1')">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px">
+            <div style="width:46px;height:46px;background:rgba(255,107,74,.3);border-radius:50%;display:flex;align-items:center;justify-content:center;border:2px solid rgba(255,107,74,.5)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="white" style="margin-left:2px"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+            <div style="font-size:.75rem;color:rgba(255,255,255,.45);text-align:center">Add video here</div>
+          </div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 50%)"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:14px 16px">
+            <span class="tag t-coral" style="margin-bottom:5px;display:inline-block">🎲 Gamers Lab</span>
+            <div style="font-family:'Fraunces',serif;font-size:.9rem;font-weight:700;color:#fff">Playtesting Day</div>
+          </div>
+        </div>
+
+        <!-- Item 3: Photo — Makers Canvas (spans 3 cols, 1 row) -->
+        <div class="gallery-item g-all g-canvas fu d2s" style="grid-column:span 3;border-radius:20px;overflow:hidden;position:relative;cursor:pointer;background:linear-gradient(135deg,#3d2e00,#7a5c00)" onclick="openLightbox('canvas-1')">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.5rem">🖌️</div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 50%)"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:14px 16px">
+            <span class="tag t-sun" style="margin-bottom:5px;display:inline-block">🖌️ Makers Canvas</span>
+            <div style="font-family:'Fraunces',serif;font-size:.9rem;font-weight:700;color:#fff">Mandala in progress</div>
+          </div>
+        </div>
+
+        <!-- Row 2: continues from item 1 (spanning 2 rows) + new items -->
+        <!-- Items in same row as item 1's second row -->
+        <!-- Item 4: Photo — Project Abhay (spans 4 cols, 1 row) -->
+        <div class="gallery-item g-all g-abhay fu d1s" style="grid-column:span 4;border-radius:20px;overflow:hidden;position:relative;cursor:pointer;background:linear-gradient(135deg,#003d2e,#007a5c)" onclick="openLightbox('abhay-1')">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.5rem">⚖️</div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 50%)"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:14px 16px">
+            <span class="tag t-mint" style="margin-bottom:5px;display:inline-block">⚖️ Project Abhay</span>
+            <div style="font-family:'Fraunces',serif;font-size:.9rem;font-weight:700;color:#fff">Mock court session</div>
+          </div>
+        </div>
+
+        <!-- Item 5: Photo — Makers Canvas detail (spans 3 cols, 1 row) -->
+        <div class="gallery-item g-all g-canvas fu d2s" style="grid-column:span 3;border-radius:20px;overflow:hidden;position:relative;cursor:pointer;background:linear-gradient(135deg,#1a0a3d,#3d1a7a)" onclick="openLightbox('canvas-2')">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.5rem">🎨</div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 50%)"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:14px 16px">
+            <span class="tag t-sky" style="margin-bottom:5px;display:inline-block">🎨 UI/UX Design</span>
+            <div style="font-family:'Fraunces',serif;font-size:.9rem;font-weight:700;color:#fff">Final presentations</div>
+          </div>
+        </div>
+
+        <!-- Row 3: 4 equal items -->
+        <!-- Item 6: Gamers Lab wide (spans 3 cols, 2 rows) -->
+        <div class="gallery-item g-all g-games fu" style="grid-column:span 3;grid-row:span 2;border-radius:20px;overflow:hidden;position:relative;cursor:pointer;background:linear-gradient(135deg,#2a1a00,#5c3a00)" onclick="openLightbox('games-2')">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px">
+            <div style="width:46px;height:46px;background:rgba(255,255,255,.12);border-radius:50%;display:flex;align-items:center;justify-content:center;border:1.5px solid rgba(255,255,255,.2)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="white" style="margin-left:2px"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+            <div style="font-size:.75rem;color:rgba(255,255,255,.4);text-align:center;padding:0 12px">Showcase video</div>
+          </div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.65),transparent 45%)"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:18px">
+            <span class="tag t-coral" style="margin-bottom:7px;display:inline-block">🎲 Gamers Lab</span>
+            <div style="font-family:'Fraunces',serif;font-size:.95rem;font-weight:700;color:#fff">Game showcase day</div>
+            <div style="font-size:.72rem;color:rgba(255,255,255,.45);margin-top:3px">Families invited · Final day</div>
+          </div>
+        </div>
+
+        <!-- Item 7: Project Abhay (spans 3 cols) -->
+        <div class="gallery-item g-all g-abhay fu d1s" style="grid-column:span 3;border-radius:20px;overflow:hidden;position:relative;cursor:pointer;background:linear-gradient(135deg,#003d30,#00664d)" onclick="openLightbox('abhay-2')">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.5rem">📜</div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 50%)"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:14px 16px">
+            <span class="tag t-mint" style="margin-bottom:5px;display:inline-block">⚖️ Project Abhay</span>
+            <div style="font-family:'Fraunces',serif;font-size:.9rem;font-weight:700;color:#fff">Rights awareness poster</div>
+          </div>
+        </div>
+
+        <!-- Item 8: UI/UX (spans 3 cols) -->
+        <div class="gallery-item g-all g-uiux fu d2s" style="grid-column:span 3;border-radius:20px;overflow:hidden;position:relative;cursor:pointer;background:linear-gradient(135deg,#001a40,#003380)" onclick="openLightbox('uiux-2')">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.5rem">💻</div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 50%)"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:14px 16px">
+            <span class="tag t-sky" style="margin-bottom:5px;display:inline-block">🎨 UI/UX Design</span>
+            <div style="font-family:'Fraunces',serif;font-size:.9rem;font-weight:700;color:#fff">Student portfolios</div>
+          </div>
+        </div>
+
+        <!-- Item 9: Makers Canvas continues (span 3) -->
+        <!-- (already taking 2 rows from item 6) -->
+        <!-- Item 10: Photo — Makers Canvas close-up (spans 3) -->
+        <div class="gallery-item g-all g-abhay fu d3s" style="grid-column:span 3;border-radius:20px;overflow:hidden;position:relative;cursor:pointer;background:linear-gradient(135deg,#1a2e00,#3d5c00)" onclick="openLightbox('abhay-3')">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:2.5rem">🏛️</div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 50%)"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:14px 16px">
+            <span class="tag t-mint" style="margin-bottom:5px;display:inline-block">⚖️ Project Abhay</span>
+            <div style="font-family:'Fraunces',serif;font-size:.9rem;font-weight:700;color:#fff">Courtroom debate</div>
+          </div>
+        </div>
+
+        <!-- Row 4: wide showcase banner -->
+        <!-- Item 11: Makers Canvas wide (spans 6) -->
+        <div class="gallery-item g-all g-canvas fu" style="grid-column:span 6;border-radius:20px;overflow:hidden;position:relative;cursor:pointer;background:linear-gradient(135deg,#2a1a00,#4a3200)" onclick="openLightbox('canvas-3')">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px">
+            <span style="font-size:3rem">🖼️</span>
+            <div style="font-size:.78rem;color:rgba(255,255,255,.4);text-align:center;padding:0 20px">Exhibition photo — add your best shot here</div>
+          </div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.65),transparent 45%)"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:18px 20px;display:flex;align-items:flex-end;justify-content:space-between">
+            <div>
+              <span class="tag t-sun" style="margin-bottom:7px;display:inline-block">🖌️ Makers Canvas</span>
+              <div style="font-family:'Fraunces',serif;font-size:1rem;font-weight:700;color:#fff">The final exhibition</div>
+              <div style="font-size:.75rem;color:rgba(255,255,255,.45);margin-top:2px">Students display their completed Mandala and Mosaic works</div>
+            </div>
+            <span class="tag" style="background:rgba(255,255,255,.15);color:rgba(255,255,255,.8)">📸 Photo</span>
+          </div>
+        </div>
+
+        <!-- Item 12: UI/UX showcase wide (spans 6) -->
+        <div class="gallery-item g-all g-uiux fu d1s" style="grid-column:span 6;border-radius:20px;overflow:hidden;position:relative;cursor:pointer;background:linear-gradient(135deg,#001433,#002266)" onclick="openLightbox('uiux-3')">
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px">
+            <div style="width:50px;height:50px;background:rgba(74,184,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;border:1.5px solid rgba(74,184,255,.4)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="margin-left:2px"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+            <div style="font-size:.78rem;color:rgba(255,255,255,.4);text-align:center;padding:0 20px">Presentation video — add here</div>
+          </div>
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.65),transparent 45%)"></div>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:18px 20px;display:flex;align-items:flex-end;justify-content:space-between">
+            <div>
+              <span class="tag t-sky" style="margin-bottom:7px;display:inline-block">🎨 UI/UX Design</span>
+              <div style="font-family:'Fraunces',serif;font-size:1rem;font-weight:700;color:#fff">Prototype presentations</div>
+              <div style="font-size:.75rem;color:rgba(255,255,255,.45);margin-top:2px">Students demo their apps to parents and guests</div>
+            </div>
+            <span class="tag" style="background:rgba(74,184,255,.2);color:rgba(74,184,255,.9)">🎬 Video</span>
+          </div>
+        </div>
+
+      </div><!-- end gallery-grid -->
+
+      <!-- Upload guide -->
+      <div style="margin-top:40px;padding:32px 36px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px" class="fu">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px">
+          <div>
+            <div style="font-size:1.4rem;margin-bottom:10px">📸</div>
+            <div style="font-weight:700;color:#fff;font-size:.9rem;margin-bottom:6px">Replace placeholders with photos</div>
+            <div style="font-size:.8rem;color:rgba(255,255,255,.4);line-height:1.6">Swap the gradient background tiles with real <code style="background:rgba(255,255,255,.08);padding:2px 6px;border-radius:4px">&lt;img&gt;</code> tags pointing to your photos. Keep the overlay divs for the caption effect.</div>
+          </div>
+          <div>
+            <div style="font-size:1.4rem;margin-bottom:10px">🎬</div>
+            <div style="font-weight:700;color:#fff;font-size:.9rem;margin-bottom:6px">Embed videos from YouTube or Drive</div>
+            <div style="font-size:.8rem;color:rgba(255,255,255,.4);line-height:1.6">Replace the play-button tiles with an <code style="background:rgba(255,255,255,.08);padding:2px 6px;border-radius:4px">&lt;iframe&gt;</code> embed from YouTube or Google Drive. Use <code style="background:rgba(255,255,255,.08);padding:2px 6px;border-radius:4px">pointer-events:all</code> on the iframe.</div>
+          </div>
+          <div>
+            <div style="font-size:1.4rem;margin-bottom:10px">🏷️</div>
+            <div style="font-weight:700;color:#fff;font-size:.9rem;margin-bottom:6px">Update captions and program tags</div>
+            <div style="font-size:.8rem;color:rgba(255,255,255,.4);line-height:1.6">Each tile has a program tag and a caption. Edit the text inside the <code style="background:rgba(255,255,255,.08);padding:2px 6px;border-radius:4px">.pb-h</code> and <code style="background:rgba(255,255,255,.08);padding:2px 6px;border-radius:4px">.tag</code> divs to match your actual content.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- LIGHTBOX OVERLAY -->
+  <div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:9990;align-items:center;justify-content:center;padding:40px" onclick="closeLightbox()">
+    <div style="max-width:900px;width:100%;position:relative" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" style="position:absolute;top:-44px;right:0;background:none;border:none;color:rgba(255,255,255,.6);font-size:1.5rem;cursor:pointer;font-weight:300;line-height:1;padding:8px">✕ Close</button>
+      <div id="lightbox-content" style="border-radius:20px;overflow:hidden;background:#111;min-height:400px;display:flex;align-items:center;justify-content:center">
+        <div style="text-align:center;padding:60px 40px">
+          <div style="font-size:4rem;margin-bottom:16px">📸</div>
+          <div style="font-family:'Fraunces',serif;font-size:1.4rem;font-weight:700;color:#fff;margin-bottom:10px">Your media goes here</div>
+          <div style="font-size:.875rem;color:rgba(255,255,255,.4);line-height:1.6;max-width:400px;margin:0 auto">Replace this lightbox content with an <code style="background:rgba(255,255,255,.08);padding:2px 6px;border-radius:4px">&lt;img&gt;</code> or <code style="background:rgba(255,255,255,.08);padding:2px 6px;border-radius:4px">&lt;iframe&gt;</code> for each tile ID.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-banner"><div class="cta-inner"><div class="cta-text"><h2>Liked what you saw?<br>Bring Summer 2026 to your school all year.</h2><p>All four programs are now available as in-school and after-school programs. Let's talk.</p></div><div class="cta-btns"><a class="btn btn-sun btn-lg" href="partner.html">Partner With Us →</a><a class="btn btn-ghost" href="programs.html">See All Programs</a></div></div></div>
+
+<footer>
+  <div class="ft-inner">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <img class="ft-logo-slot" src="assets/images/logo-white.svg" alt="Maekido" style="display:block;width:155px;height:auto">
+        <p>Bringing design thinking, creativity, and real-world skills to schools across India.<br>Future Makers Start Here.</p>
+        <div class="social-row"><a class="soc" href="#" onclick="showToast('Instagram 📸')">📸</a><a class="soc" href="#" onclick="showToast('LinkedIn 💼')">💼</a><a class="soc" href="#" onclick="showToast('YouTube ▶️')">▶️</a><a class="soc" href="#" onclick="showToast('WhatsApp: +91 98765 43210')">💬</a></div>
+      </div>
+      <div class="ft-col"><h4>Programs</h4><ul><li><a href="programs.html">UI/UX Design</a></li><li><a href="programs.html">Gamers Lab</a></li><li><a href="programs.html">Makers Canvas</a></li><li><a href="programs.html">Project Abhay</a></li><li><a href="programs.html">Design Thinking</a></li><li><a href="programs.html">Robotics</a></li></ul></div>
+      <div class="ft-col"><h4>School Programs</h4><ul><li><a href="partner.html">Partner With Us</a></li><li><a href="contact.html">Schedule a Visit</a></li><li><a href="summer.html">Summer 2026 Recap</a></li><li><a href="index.html#testimonials">Testimonials</a></li></ul></div>
+      <div class="ft-col"><h4>Company</h4><ul><li><a href="about.html">About Maekido</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="mailto:hello@maekido.in">hello@maekido.in</a></li><li><a onclick="showToast('Hyderabad, India 📍')">Hyderabad, India</a></li></ul></div>
+    </div>
+    <div class="ft-bottom"><span>© 2026 Maekido. Made with ❤️ in Hyderabad.</span><div class="social-row"><a class="btn btn-ghost btn-sm" href="partner.html">Partner With Us</a></div></div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/forms.js"></script>
+</body>
+</html>

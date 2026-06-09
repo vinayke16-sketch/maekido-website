@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programs — Maekido</title>
+<meta name="description" content="Explore Maekido's six hands-on programs — UI/UX Design, Gamers Lab, Makers Canvas, Project Abhay, Design Thinking and Robotics — built for schools across India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="programs">
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cring"></div>
+<div class="toast" id="toast"></div>
+
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html" id="navLogo"><img class="logo-svg" src="assets/images/logo-black.svg" alt="Maekido" style="display:block;width:128px;height:43px"></a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-page="home">Home</a></li>
+    <li><a href="summer.html" data-page="summer">Summer 2026</a></li>
+    <li><a href="programs.html" data-page="programs">Programs</a></li>
+    <li><a href="about.html" data-page="about">About</a></li>
+    <li><a href="blog.html" data-page="blog">Blog</a></li>
+    <li><a href="contact.html" data-page="contact">Contact</a></li>
+    <li><a class="nav-cta" href="partner.html">Partner With Us →</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="index.html" data-page="home">Home</a>
+  <a href="summer.html" data-page="summer">Summer 2026</a>
+  <a href="programs.html" data-page="programs">Programs</a>
+  <a href="about.html" data-page="about">About</a>
+  <a href="blog.html" data-page="blog">Blog</a>
+  <a href="contact.html" data-page="contact">Contact</a>
+  <a href="partner.html" style="color:var(--coral);margin-top:8px">Partner With Us →</a>
+</div>
+
+  <div class="pg-hero">
+    <div class="pg-hero-in">
+      <div class="sec-label">Programs &amp; Curriculum</div>
+      <h1 class="d2" style="max-width:700px">Six programs.<br>One <span class="hi">unforgettable</span> school year.</h1>
+      <p class="bl" style="max-width:600px;margin-top:20px">Every Maekido program is built around real outcomes — students make something, learn something, and leave with something they're proud of. Four are proven from Summer 2026. Two are launching to schools now.</p>
+    </div>
+  </div>
+  <div class="programs-list">
+    <div class="pl-inner">
+      <!-- UI/UX -->
+      <div class="prog-detail">
+        <div class="pd-grid">
+          <div class="pd-visual" style="background:linear-gradient(135deg,#edf6ff,#d0eaff)">
+            <div class="pd-vis-em">🎨</div>
+            <div class="pd-vis-lbl">UI/UX Design</div>
+          </div>
+          <div>
+            <div class="pd-tag"><span class="tag t-sky">Grades 6–12</span> <span class="tag t-green" style="margin-left:6px">✓ Proven Summer 2026</span></div>
+            <h2 class="pd-h">Beginners UI/UX Design</h2>
+            <p class="pd-p">Students with zero design experience learn to think like designers — researching users, sketching wireframes, and building interactive prototypes in Figma. By the end, they present a real app design to a live audience.</p>
+            <ul class="pd-outcomes"><li>Learn design thinking & user research</li><li>Build wireframes and user flows</li><li>Create interactive Figma prototypes</li><li>Present at a final showcase event</li><li>Leave with a portfolio piece</li></ul>
+            <div class="pd-grades"><span class="tag t-sky">Grades 6–12</span><span class="tag t-ink">In-School</span><span class="tag t-ink">After-School Club</span></div>
+            <a class="btn btn-primary" href="partner.html">Bring to Your School →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Gamers Lab -->
+      <div class="prog-detail" style="background:var(--warm)">
+        <div class="pd-grid rev">
+          <div class="pd-visual" style="background:linear-gradient(135deg,#fff1ee,#ffe0d8)">
+            <div class="pd-vis-em">🎲</div>
+            <div class="pd-vis-lbl">Gamers Lab</div>
+          </div>
+          <div>
+            <div class="pd-tag"><span class="tag t-coral">Grades 4–9</span> <span class="tag t-green" style="margin-left:6px">✓ Proven Summer 2026</span></div>
+            <h2 class="pd-h">Gamers Lab · Board Game Design</h2>
+            <p class="pd-p">Students don't just play games — they make them. From concept to playable prototype, students design the mechanics, write the rules, and test their games with real players. This is systems thinking disguised as play.</p>
+            <ul class="pd-outcomes"><li>Develop original board game concept</li><li>Design rules, mechanics and balance</li><li>Create physical game prototype</li><li>Playtest and iterate with peers</li><li>Showcase finished game to families</li></ul>
+            <div class="pd-grades"><span class="tag t-coral">Grades 4–9</span><span class="tag t-ink">In-School</span><span class="tag t-ink">After-School Club</span></div>
+            <a class="btn btn-primary" href="partner.html">Bring to Your School →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Makers Canvas -->
+      <div class="prog-detail">
+        <div class="pd-grid">
+          <div class="pd-visual" style="background:linear-gradient(135deg,#fff9e6,#fff0b3)">
+            <div class="pd-vis-em">🖌️</div>
+            <div class="pd-vis-lbl">Makers Canvas</div>
+          </div>
+          <div>
+            <div class="pd-tag"><span class="tag t-sun">Grades 4–10</span> <span class="tag t-green" style="margin-left:6px">✓ Proven Summer 2026</span></div>
+            <h2 class="pd-h">Makers Canvas · Mandala &amp; Mosaic Art</h2>
+            <p class="pd-p">A deeply calming and creative program where students master two ancient art forms — Mandala drawing and Mosaic tiling. This program builds focus, patience, fine motor skills, and genuine artistic confidence in students who may never have thought of themselves as artists.</p>
+            <ul class="pd-outcomes"><li>Complete multiple Mandala artworks</li><li>Create Mosaic pieces using colour theory</li><li>Develop focus, patience and mindfulness</li><li>Build artistic confidence and self-expression</li><li>Exhibit work at end-of-program showcase</li></ul>
+            <div class="pd-grades"><span class="tag t-sun">Grades 4–10</span><span class="tag t-ink">In-School</span><span class="tag t-ink">After-School Club</span><span class="tag t-ink">Wellbeing Program</span></div>
+            <a class="btn btn-primary" href="partner.html">Bring to Your School →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project Abhay -->
+      <div class="prog-detail" style="background:var(--warm)">
+        <div class="pd-grid rev">
+          <div class="pd-visual" style="background:linear-gradient(135deg,#edfbf5,#c5f5e5)">
+            <div class="pd-vis-em">⚖️</div>
+            <div class="pd-vis-lbl">Project Abhay</div>
+          </div>
+          <div>
+            <div class="pd-tag"><span class="tag t-mint">Grades 7–12</span> <span class="tag t-green" style="margin-left:6px">✓ Proven Summer 2026</span></div>
+            <h2 class="pd-h">Project Abhay · Legal Literacy</h2>
+            <p class="pd-p">Every student has rights — most don't know them. Project Abhay changes that. Students explore India's legal system through interactive sessions, mock courts, and real case studies that are directly relevant to their lives as young people.</p>
+            <ul class="pd-outcomes"><li>Understand fundamental rights under the Indian Constitution</li><li>Learn child protection laws and POCSO</li><li>Run mock courtroom sessions</li><li>Discuss real cases relevant to teenagers</li><li>Create community awareness materials</li></ul>
+            <div class="pd-grades"><span class="tag t-mint">Grades 7–12</span><span class="tag t-ink">In-School</span><span class="tag t-ink">After-School Club</span></div>
+            <a class="btn btn-primary" href="partner.html">Bring to Your School →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Design Thinking -->
+      <div class="prog-detail">
+        <div class="pd-grid">
+          <div class="pd-visual" style="background:linear-gradient(135deg,#f4f0ff,#ddd1ff)">
+            <div class="pd-vis-em">💡</div>
+            <div class="pd-vis-lbl">Design Thinking</div>
+          </div>
+          <div>
+            <div class="pd-tag"><span class="tag t-violet">Grades 5–12</span> <span class="tag t-violet" style="margin-left:6px">Coming to Schools</span></div>
+            <h2 class="pd-h">Design Thinking</h2>
+            <p class="pd-p">The method behind every great product, service, and solution — taught to students. Using the 5-stage design thinking framework, students tackle real problems from their school and community, building empathy, creative confidence, and structured problem-solving skills that apply everywhere.</p>
+            <ul class="pd-outcomes"><li>Master the 5-stage design thinking process</li><li>Conduct empathy interviews with real users</li><li>Define problem statements and HMW questions</li><li>Prototype and test real solutions</li><li>Present solutions at final showcase</li></ul>
+            <div class="pd-grades"><span class="tag t-violet">Grades 5–12</span><span class="tag t-ink">In-School</span><span class="tag t-ink">After-School Club</span></div>
+            <a class="btn btn-primary" href="partner.html">Bring to Your School →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Robotics -->
+      <div class="prog-detail" style="background:var(--warm)">
+        <div class="pd-grid rev">
+          <div class="pd-visual" style="background:linear-gradient(135deg,#f2f2f2,#e2e2e2)">
+            <div class="pd-vis-em">🤖</div>
+            <div class="pd-vis-lbl">Robotics</div>
+          </div>
+          <div>
+            <div class="pd-tag"><span class="tag t-ink">Grades 5–10</span> <span class="tag t-ink" style="margin-left:6px">Coming to Schools</span></div>
+            <h2 class="pd-h">Robotics</h2>
+            <p class="pd-p">Hands-on robotics where students build, program and test robots to solve real challenges. This program bridges the gap between abstract STEM concepts and physical making — giving students something they can actually hold, program, and watch come to life.</p>
+            <ul class="pd-outcomes"><li>Build and assemble robots from components</li><li>Learn basic programming and logic</li><li>Complete challenge-based missions</li><li>Work in teams to solve engineering problems</li><li>Present final robot at showcase event</li></ul>
+            <div class="pd-grades"><span class="tag t-ink">Grades 5–10</span><span class="tag t-ink">In-School</span><span class="tag t-ink">STEM Program</span></div>
+            <a class="btn btn-primary" href="partner.html">Bring to Your School →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CTA -->
+  <div class="cta-banner">
+    <div class="cta-inner"><div class="cta-text"><h2>Want all 6 programs?<br>Let's build your school year together.</h2><p>We'll help you pick the right mix of programs for your students, budget, and schedule.</p></div><div class="cta-btns"><a class="btn btn-sun btn-lg" href="partner.html">Partner With Us →</a><a class="btn btn-ghost" href="contact.html">Talk to the Team</a></div></div>
+  </div>
+
+<footer>
+  <div class="ft-inner">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <img class="ft-logo-slot" src="assets/images/logo-white.svg" alt="Maekido" style="display:block;width:155px;height:auto">
+        <p>Bringing design thinking, creativity, and real-world skills to schools across India.<br>Future Makers Start Here.</p>
+        <div class="social-row"><a class="soc" href="#" onclick="showToast('Instagram 📸')">📸</a><a class="soc" href="#" onclick="showToast('LinkedIn 💼')">💼</a><a class="soc" href="#" onclick="showToast('YouTube ▶️')">▶️</a><a class="soc" href="#" onclick="showToast('WhatsApp: +91 98765 43210')">💬</a></div>
+      </div>
+      <div class="ft-col"><h4>Programs</h4><ul><li><a href="programs.html">UI/UX Design</a></li><li><a href="programs.html">Gamers Lab</a></li><li><a href="programs.html">Makers Canvas</a></li><li><a href="programs.html">Project Abhay</a></li><li><a href="programs.html">Design Thinking</a></li><li><a href="programs.html">Robotics</a></li></ul></div>
+      <div class="ft-col"><h4>School Programs</h4><ul><li><a href="partner.html">Partner With Us</a></li><li><a href="contact.html">Schedule a Visit</a></li><li><a href="summer.html">Summer 2026 Recap</a></li><li><a href="index.html#testimonials">Testimonials</a></li></ul></div>
+      <div class="ft-col"><h4>Company</h4><ul><li><a href="about.html">About Maekido</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="mailto:hello@maekido.in">hello@maekido.in</a></li><li><a onclick="showToast('Hyderabad, India 📍')">Hyderabad, India</a></li></ul></div>
+    </div>
+    <div class="ft-bottom"><span>© 2026 Maekido. Made with ❤️ in Hyderabad.</span><div class="social-row"><a class="btn btn-ghost btn-sm" href="partner.html">Partner With Us</a></div></div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/forms.js"></script>
+</body>
+</html>

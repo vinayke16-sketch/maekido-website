@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Maekido</title>
+<meta name="description" content="Get in touch with Maekido — schedule a school visit, ask about our programs, or say hello.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="contact">
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cring"></div>
+<div class="toast" id="toast"></div>
+
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html" id="navLogo"><img class="logo-svg" src="assets/images/logo-black.svg" alt="Maekido" style="display:block;width:128px;height:43px"></a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-page="home">Home</a></li>
+    <li><a href="summer.html" data-page="summer">Summer 2026</a></li>
+    <li><a href="programs.html" data-page="programs">Programs</a></li>
+    <li><a href="about.html" data-page="about">About</a></li>
+    <li><a href="blog.html" data-page="blog">Blog</a></li>
+    <li><a href="contact.html" data-page="contact">Contact</a></li>
+    <li><a class="nav-cta" href="partner.html">Partner With Us →</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="index.html" data-page="home">Home</a>
+  <a href="summer.html" data-page="summer">Summer 2026</a>
+  <a href="programs.html" data-page="programs">Programs</a>
+  <a href="about.html" data-page="about">About</a>
+  <a href="blog.html" data-page="blog">Blog</a>
+  <a href="contact.html" data-page="contact">Contact</a>
+  <a href="partner.html" style="color:var(--coral);margin-top:8px">Partner With Us →</a>
+</div>
+
+  <div class="contact-sec">
+    <div class="ci">
+      <div class="c-info fu">
+        <div class="sec-label">Get In Touch</div>
+        <h1 class="d2">Let's bring Maekido<br>to your <span class="hi">school.</span></h1>
+        <p class="bm" style="margin-bottom:32px">Whether you're a principal, a teacher, or a parent who wants to make this happen — we'd love to hear from you. We typically respond within 24 hours.</p>
+        <div class="c-methods">
+          <div class="cm"><div class="cm-icon">📧</div><div><div class="cm-label">Email</div><div class="cm-val">hello@maekido.in</div></div></div>
+          <div class="cm"><div class="cm-icon">💬</div><div><div class="cm-label">WhatsApp</div><div class="cm-val">+91 98765 43210</div></div></div>
+          <div class="cm"><div class="cm-icon">📍</div><div><div class="cm-label">Based In</div><div class="cm-val">Hyderabad · Serving all cities</div></div></div>
+          <div class="cm"><div class="cm-icon">⏱️</div><div><div class="cm-label">Response Time</div><div class="cm-val">Within 24 hours</div></div></div>
+        </div>
+      </div>
+      <div class="c-form fu d2s">
+        <div class="c-form-title">Send us a message</div>
+        <div class="frow" style="margin-bottom:20px">
+          <div class="fgrp"><label class="flabel">First Name</label><input class="finput" id="c-fname" placeholder="Priya"></div>
+          <div class="fgrp"><label class="flabel">Last Name</label><input class="finput" id="c-lname" placeholder="Sharma"></div>
+        </div>
+        <div class="fgrp"><label class="flabel">Email Address</label><input type="email" class="finput" id="c-email" placeholder="priya@school.edu.in"></div>
+        <div class="fgrp"><label class="flabel">I am a</label><select class="finput" id="c-role"><option>School Principal / Management</option><option>Teacher / HOD</option><option>Parent / Guardian</option><option>Student</option><option>Other</option></select></div>
+        <div class="fgrp"><label class="flabel">Interested In</label><select class="finput" id="c-interest"><option>In-School Programs</option><option>After-School Clubs</option><option>Scheduling a School Visit</option><option>Learning More About Programs</option><option>General Enquiry</option></select></div>
+        <div class="fgrp"><label class="flabel">Message</label><textarea class="finput" id="c-msg" rows="4" placeholder="Tell us about your school and what you're looking for..."></textarea></div>
+        <button class="btn btn-primary btn-full" onclick="submitContact()">Send Message →</button>
+      </div>
+    </div>
+  </div>
+
+<footer>
+  <div class="ft-inner">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <img class="ft-logo-slot" src="assets/images/logo-white.svg" alt="Maekido" style="display:block;width:155px;height:auto">
+        <p>Bringing design thinking, creativity, and real-world skills to schools across India.<br>Future Makers Start Here.</p>
+        <div class="social-row"><a class="soc" href="#" onclick="showToast('Instagram 📸')">📸</a><a class="soc" href="#" onclick="showToast('LinkedIn 💼')">💼</a><a class="soc" href="#" onclick="showToast('YouTube ▶️')">▶️</a><a class="soc" href="#" onclick="showToast('WhatsApp: +91 98765 43210')">💬</a></div>
+      </div>
+      <div class="ft-col"><h4>Programs</h4><ul><li><a href="programs.html">UI/UX Design</a></li><li><a href="programs.html">Gamers Lab</a></li><li><a href="programs.html">Makers Canvas</a></li><li><a href="programs.html">Project Abhay</a></li><li><a href="programs.html">Design Thinking</a></li><li><a href="programs.html">Robotics</a></li></ul></div>
+      <div class="ft-col"><h4>School Programs</h4><ul><li><a href="partner.html">Partner With Us</a></li><li><a href="contact.html">Schedule a Visit</a></li><li><a href="summer.html">Summer 2026 Recap</a></li><li><a href="index.html#testimonials">Testimonials</a></li></ul></div>
+      <div class="ft-col"><h4>Company</h4><ul><li><a href="about.html">About Maekido</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="mailto:hello@maekido.in">hello@maekido.in</a></li><li><a onclick="showToast('Hyderabad, India 📍')">Hyderabad, India</a></li></ul></div>
+    </div>
+    <div class="ft-bottom"><span>© 2026 Maekido. Made with ❤️ in Hyderabad.</span><div class="social-row"><a class="btn btn-ghost btn-sm" href="partner.html">Partner With Us</a></div></div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/forms.js"></script>
+</body>
+</html>

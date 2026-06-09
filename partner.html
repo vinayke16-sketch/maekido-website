@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partner With Us — Maekido</title>
+<meta name="description" content="Bring Maekido to your school. Tell us about your school and we'll help you design the right program for your students.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="enroll">
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cring"></div>
+<div class="toast" id="toast"></div>
+
+<nav id="mainNav">
+  <a class="nav-logo" href="index.html" id="navLogo"><img class="logo-svg" src="assets/images/logo-black.svg" alt="Maekido" style="display:block;width:128px;height:43px"></a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-page="home">Home</a></li>
+    <li><a href="summer.html" data-page="summer">Summer 2026</a></li>
+    <li><a href="programs.html" data-page="programs">Programs</a></li>
+    <li><a href="about.html" data-page="about">About</a></li>
+    <li><a href="blog.html" data-page="blog">Blog</a></li>
+    <li><a href="contact.html" data-page="contact">Contact</a></li>
+    <li><a class="nav-cta" href="partner.html">Partner With Us →</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="index.html" data-page="home">Home</a>
+  <a href="summer.html" data-page="summer">Summer 2026</a>
+  <a href="programs.html" data-page="programs">Programs</a>
+  <a href="about.html" data-page="about">About</a>
+  <a href="blog.html" data-page="blog">Blog</a>
+  <a href="contact.html" data-page="contact">Contact</a>
+  <a href="partner.html" style="color:var(--coral);margin-top:8px">Partner With Us →</a>
+</div>
+
+  <div class="enroll-hero">
+    <div class="eh-inner">
+      <div class="sec-label" style="margin:0 auto 22px">Partner With Maekido</div>
+      <h1 class="d2">Your school.<br>Your students.<br><span class="hi">Their future.</span></h1>
+      <p class="bm" style="max-width:580px;margin:20px auto 0">Fill in the form below and we'll reach out within 24 hours. No commitment required — just a conversation about what's right for your school.</p>
+    </div>
+  </div>
+  <div class="enroll-steps-row">
+    <div class="es-inner">
+      <div class="estep fu"><div class="estep-num">1</div><div class="estep-title">Tell Us About Your School</div><div class="estep-desc">Share your size, grades, and what you're looking for.</div></div>
+      <div class="estep fu d1s"><div class="estep-num">2</div><div class="estep-title">We Suggest Programs</div><div class="estep-desc">Our team reviews your needs and recommends the best fit.</div></div>
+      <div class="estep fu d2s"><div class="estep-num">3</div><div class="estep-title">Schedule a Visit</div><div class="estep-desc">We come to your school and show you what Maekido looks like in action.</div></div>
+      <div class="estep fu d3s"><div class="estep-num">4</div><div class="estep-title">Launch Together</div><div class="estep-desc">We handle everything — instructors, materials, planning. You open the door.</div></div>
+    </div>
+  </div>
+  <div class="enroll-form-sec">
+    <div class="ef-inner">
+      <div class="ef-box fu">
+        <h3 style="font-family:'Fraunces',serif;font-size:1.5rem;font-weight:800;margin-bottom:6px">School Partnership Form</h3>
+        <p style="font-size:.875rem;color:var(--mid);margin-bottom:32px">We'll be in touch within 24 hours. No sales pressure — just a conversation.</p>
+
+        <div class="fsec-title">Your Details</div>
+        <div class="frow" style="margin-bottom:20px">
+          <div class="fgrp"><label class="flabel">Your Name</label><input class="finput" id="e-name" placeholder="Ms. Priya Sharma"></div>
+          <div class="fgrp"><label class="flabel">Your Role</label><select class="finput" id="e-role"><option>Principal</option><option>Vice Principal</option><option>HOD / Teacher</option><option>School Management</option><option>Parent Representative</option></select></div>
+        </div>
+        <div class="frow" style="margin-bottom:20px">
+          <div class="fgrp"><label class="flabel">Email</label><input type="email" class="finput" id="e-email" placeholder="priya@school.edu.in"></div>
+          <div class="fgrp"><label class="flabel">Phone / WhatsApp</label><input class="finput" id="e-phone" placeholder="+91 98765 43210"></div>
+        </div>
+
+        <div class="fsec-title">School Details</div>
+        <div class="frow" style="margin-bottom:20px">
+          <div class="fgrp"><label class="flabel">School Name</label><input class="finput" id="e-school" placeholder="DPS Hyderabad"></div>
+          <div class="fgrp"><label class="flabel">City</label><input class="finput" id="e-city" placeholder="Hyderabad"></div>
+        </div>
+        <div class="frow" style="margin-bottom:20px">
+          <div class="fgrp"><label class="flabel">Approx. Student Count</label><select class="finput" id="e-size"><option>Under 300</option><option>300–800</option><option>800–1500</option><option>1500+</option></select></div>
+          <div class="fgrp"><label class="flabel">Grades Available</label><select class="finput" id="e-grades"><option>Grades 4–7</option><option>Grades 6–10</option><option>Grades 8–12</option><option>All Grades 4–12</option></select></div>
+        </div>
+
+        <div class="fsec-title">Program Interest</div>
+        <div class="fgrp">
+          <label class="flabel">Which programs interest you?</label>
+          <div class="prog-checks" id="prog-checks">
+            <label class="pchk"><input type="checkbox" style="accent-color:var(--coral)" value="UI/UX Design"> 🎨 UI/UX Design</label>
+            <label class="pchk"><input type="checkbox" style="accent-color:var(--coral)" value="Gamers Lab"> 🎲 Gamers Lab</label>
+            <label class="pchk"><input type="checkbox" style="accent-color:var(--coral)" value="Makers Canvas"> 🖌️ Makers Canvas</label>
+            <label class="pchk"><input type="checkbox" style="accent-color:var(--coral)" value="Project Abhay"> ⚖️ Project Abhay</label>
+            <label class="pchk"><input type="checkbox" style="accent-color:var(--coral)" value="Design Thinking"> 💡 Design Thinking</label>
+            <label class="pchk"><input type="checkbox" style="accent-color:var(--coral)" value="Robotics"> 🤖 Robotics</label>
+          </div>
+        </div>
+        <div class="fgrp"><label class="flabel">Preferred Format</label><select class="finput" id="e-format"><option>In-School Program (during school hours)</option><option>After-School Club (after hours)</option><option>Both In-School and After-School</option><option>Not sure — need guidance</option></select></div>
+        <div class="fgrp"><label class="flabel">Anything else we should know?</label><textarea class="finput" id="e-notes" rows="3" placeholder="Special requirements, timing, batch sizes, budget — anything helps..."></textarea></div>
+
+        <div style="background:rgba(61,214,163,.08);border:1.5px solid rgba(61,214,163,.25);border-radius:14px;padding:18px;margin-bottom:24px;display:flex;gap:12px;align-items:flex-start">
+          <span style="font-size:1.1rem;flex-shrink:0">✅</span>
+          <p style="font-size:.83rem;color:var(--ink);line-height:1.65">No commitment required. This form starts the conversation — our team will reach out, understand your needs, and suggest what's right for your school.</p>
+        </div>
+        <button class="btn btn-coral btn-lg btn-full" onclick="submitEnroll()">Submit Partnership Enquiry →</button>
+      </div>
+    </div>
+  </div>
+
+<footer>
+  <div class="ft-inner">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <img class="ft-logo-slot" src="assets/images/logo-white.svg" alt="Maekido" style="display:block;width:155px;height:auto">
+        <p>Bringing design thinking, creativity, and real-world skills to schools across India.<br>Future Makers Start Here.</p>
+        <div class="social-row"><a class="soc" href="#" onclick="showToast('Instagram 📸')">📸</a><a class="soc" href="#" onclick="showToast('LinkedIn 💼')">💼</a><a class="soc" href="#" onclick="showToast('YouTube ▶️')">▶️</a><a class="soc" href="#" onclick="showToast('WhatsApp: +91 98765 43210')">💬</a></div>
+      </div>
+      <div class="ft-col"><h4>Programs</h4><ul><li><a href="programs.html">UI/UX Design</a></li><li><a href="programs.html">Gamers Lab</a></li><li><a href="programs.html">Makers Canvas</a></li><li><a href="programs.html">Project Abhay</a></li><li><a href="programs.html">Design Thinking</a></li><li><a href="programs.html">Robotics</a></li></ul></div>
+      <div class="ft-col"><h4>School Programs</h4><ul><li><a href="partner.html">Partner With Us</a></li><li><a href="contact.html">Schedule a Visit</a></li><li><a href="summer.html">Summer 2026 Recap</a></li><li><a href="index.html#testimonials">Testimonials</a></li></ul></div>
+      <div class="ft-col"><h4>Company</h4><ul><li><a href="about.html">About Maekido</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="mailto:hello@maekido.in">hello@maekido.in</a></li><li><a onclick="showToast('Hyderabad, India 📍')">Hyderabad, India</a></li></ul></div>
+    </div>
+    <div class="ft-bottom"><span>© 2026 Maekido. Made with ❤️ in Hyderabad.</span><div class="social-row"><a class="btn btn-ghost btn-sm" href="partner.html">Partner With Us</a></div></div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/forms.js"></script>
+</body>
+</html>
