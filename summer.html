@@ -19,7 +19,7 @@
   <a class="nav-logo" href="index.html" id="navLogo"><img class="logo-svg" src="assets/images/logo-black.svg" alt="Maekido" style="display:block;width:128px;height:43px"></a>
   <ul class="nav-links">
     <li><a href="index.html" data-page="home">Home</a></li>
-    <li><a href="summer.html" data-page="summer">Summer 2026</a></li>
+    <li><a href="summer.html" data-page="summer" class="active-link">Summer 2026</a></li>
     <li><a href="programs.html" data-page="programs">Programs</a></li>
     <li><a href="about.html" data-page="about">About</a></li>
     <li><a href="blog.html" data-page="blog">Blog</a></li>
@@ -30,7 +30,7 @@
 </nav>
 <div class="mob-menu" id="mobMenu">
   <a href="index.html" data-page="home">Home</a>
-  <a href="summer.html" data-page="summer">Summer 2026</a>
+  <a href="summer.html" data-page="summer" class="active-link">Summer 2026</a>
   <a href="programs.html" data-page="programs">Programs</a>
   <a href="about.html" data-page="about">About</a>
   <a href="blog.html" data-page="blog">Blog</a>
@@ -72,7 +72,7 @@
               <li style="--c:var(--sky)"><span style="width:19px;height:19px;border-radius:50%;background:var(--sky);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Presented final designs to parents and guests</li>
               <li style="--c:var(--sky)"><span style="width:19px;height:19px;border-radius:50%;background:var(--sky);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Left with a portfolio piece and new career interest</li>
             </ul>
-            <div class="pb-quote"><p class="pb-q-text">"I designed my first app and my parents couldn't believe it was made by me. I want to be a UI designer now."</p><div class="pb-q-attr">— Aryan, Grade 9 · UI/UX Design Camp 2026</div></div>
+            <div class="pb-quote"><p class="pb-q-text">"I designed my first app and my parents couldn't believe it was made by me. I want to be a UI designer now."</p><div class="pb-q-attr">— Srithik, Grade 7 · UI/UX Design  2026</div></div>
             <a class="btn btn-primary btn-sm" href="partner.html">Bring to your school →</a>
           </div>
         </div>
@@ -138,7 +138,7 @@
               <li><span style="width:19px;height:19px;border-radius:50%;background:var(--mint);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Discussed real case studies relevant to teenagers</li>
               <li><span style="width:19px;height:19px;border-radius:50%;background:var(--mint);display:flex;align-items:center;justify-content:center;font-size:.56rem;font-weight:800;flex-shrink:0;margin-top:1px;color:#fff">✓</span>Created community awareness posters for their schools</li>
             </ul>
-            <div class="pb-quote"><p class="pb-q-text">"Project Abhay gave my son something no textbook has — the confidence that the law belongs to him. He came home explaining his rights to the whole family."</p><div class="pb-q-attr">— Meera Nair · Parent, Project Abhay 2026</div></div>
+            <div class="pb-quote"><p class="pb-q-text">"Project Abhay gave my son something no textbook has — the confidence that the law belongs to him. He came home explaining his rights to the whole family."</p><div class="pb-q-attr">— Harithapriya · Parent, Project Abhay 2026</div></div>
             <a class="btn btn-primary btn-sm" href="partner.html">Bring to your school →</a>
           </div>
         </div>
@@ -169,18 +169,6 @@
             <button class="gf-btn" onclick="filterGallery('abhay')">⚖️ Project Abhay</button>
           </div>
         </div>
-      </div>
-
-      <!-- Upload CTA strip -->
-      <div style="background:rgba(245,200,66,.1);border:1.5px dashed rgba(245,200,66,.35);border-radius:20px;padding:20px 28px;margin-bottom:48px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap" class="fu">
-        <div style="display:flex;align-items:center;gap:14px">
-          <span style="font-size:1.8rem">📸</span>
-          <div>
-            <div style="font-weight:700;color:#fff;font-size:.95rem;margin-bottom:3px">Your content goes here</div>
-            <div style="font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.5">Replace the placeholder tiles below with real photos and videos from Summer 2026. Each tile has a program tag and caption ready to edit.</div>
-          </div>
-        </div>
-        <button class="btn btn-sun btn-sm" onclick="showToast('Add your photos & videos to the gallery tiles below 📸')">How to add media →</button>
       </div>
 
       <!-- FEATURED VIDEO — full width -->
@@ -362,27 +350,6 @@
 
       </div><!-- end gallery-grid -->
 
-      <!-- Upload guide -->
-      <div style="margin-top:40px;padding:32px 36px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px" class="fu">
-        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px">
-          <div>
-            <div style="font-size:1.4rem;margin-bottom:10px">📸</div>
-            <div style="font-weight:700;color:#fff;font-size:.9rem;margin-bottom:6px">Replace placeholders with photos</div>
-            <div style="font-size:.8rem;color:rgba(255,255,255,.4);line-height:1.6">Swap the gradient background tiles with real <code style="background:rgba(255,255,255,.08);padding:2px 6px;border-radius:4px">&lt;img&gt;</code> tags pointing to your photos. Keep the overlay divs for the caption effect.</div>
-          </div>
-          <div>
-            <div style="font-size:1.4rem;margin-bottom:10px">🎬</div>
-            <div style="font-weight:700;color:#fff;font-size:.9rem;margin-bottom:6px">Embed videos from YouTube or Drive</div>
-            <div style="font-size:.8rem;color:rgba(255,255,255,.4);line-height:1.6">Replace the play-button tiles with an <code style="background:rgba(255,255,255,.08);padding:2px 6px;border-radius:4px">&lt;iframe&gt;</code> embed from YouTube or Google Drive. Use <code style="background:rgba(255,255,255,.08);padding:2px 6px;border-radius:4px">pointer-events:all</code> on the iframe.</div>
-          </div>
-          <div>
-            <div style="font-size:1.4rem;margin-bottom:10px">🏷️</div>
-            <div style="font-weight:700;color:#fff;font-size:.9rem;margin-bottom:6px">Update captions and program tags</div>
-            <div style="font-size:.8rem;color:rgba(255,255,255,.4);line-height:1.6">Each tile has a program tag and a caption. Edit the text inside the <code style="background:rgba(255,255,255,.08);padding:2px 6px;border-radius:4px">.pb-h</code> and <code style="background:rgba(255,255,255,.08);padding:2px 6px;border-radius:4px">.tag</code> divs to match your actual content.</div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 
@@ -401,7 +368,7 @@
   </div>
 
   <div class="cta-banner"><div class="cta-inner"><div class="cta-text"><h2>Liked what you saw?<br>Bring Summer 2026 to your school all year.</h2><p>All four programs are now available as in-school and after-school programs. Let's talk.</p></div><div class="cta-btns"><a class="btn btn-sun btn-lg" href="partner.html">Partner With Us →</a><a class="btn btn-ghost" href="programs.html">See All Programs</a></div></div></div>
-
+  
 <footer>
   <div class="ft-inner">
     <div class="ft-top">
