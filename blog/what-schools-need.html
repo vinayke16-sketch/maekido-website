@@ -3,227 +3,222 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>What Schools Actually Need (And Why We Built Our Programs Around That) – Maekido</title>
-<meta name="description" content="We talked to 40+ school principals before building our in-school programs. This is what they told us — and how it changed what we built.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/styles.css">
-<style>
-
-  .art-hero{padding:160px 5% 60px;max-width:840px;margin:0 auto;text-align:left}
-  .art-hero h1{font-family:'Fraunces',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:700;line-height:1.15;margin:18px 0 18px;color:var(--ink)}
-  .art-hero .bl{max-width:640px}
-  .art-meta{display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--mid);margin-top:24px;font-family:'Plus Jakarta Sans',sans-serif}
-  .art-avatar{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;background:rgba(255,107,74,.12)}
-  .art-cover{max-width:840px;margin:0 auto 40px;border-radius:var(--r2);height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;font-size:4.5rem}
-  .art-cover p{font-family:'Fraunces',serif;font-style:italic;font-size:1rem;color:var(--ink);opacity:.7}
-  .art-body{max-width:760px;margin:0 auto;padding:0 5% 80px}
-  .art-body h2{font-family:'Fraunces',serif;font-size:clamp(1.4rem,2.5vw,2rem);font-weight:700;margin:48px 0 18px;color:var(--ink);line-height:1.2}
-  .art-body h3{font-family:'Fraunces',serif;font-size:1.15rem;font-weight:700;margin:0 0 8px;color:var(--ink)}
-  .art-body h4{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:700;margin:0 0 8px;color:var(--ink)}
-  .art-body p.bl{margin-bottom:20px}
-  .highlight-box{background:var(--warm);border-left:4px solid var(--coral);border-radius:0 var(--r) var(--r) 0;padding:24px 28px;margin:32px 0}
-  .highlight-box p{margin:0;font-style:italic;font-size:1.05rem;color:var(--ink)}
-  .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:40px 0}
-  .stat-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:22px;text-align:center}
-  .stat-card .num{font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:var(--coral);display:block}
-  .stat-card .label{font-size:.8rem;color:var(--mid);margin-top:6px}
-  .inline-img{border-radius:var(--r);margin:32px 0;overflow:hidden;border:1px solid var(--border)}
-  .inline-img-placeholder{height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;font-size:3rem;text-align:center}
-  .inline-img-placeholder p{font-size:.85rem;color:var(--mid);max-width:80%}
-  .pull-quote{border-left:4px solid var(--sun);padding:16px 24px;margin:32px 0;background:rgba(245,200,66,.1);border-radius:0 var(--r) var(--r) 0}
-  .pull-quote p{font-family:'Fraunces',serif;font-size:1.3rem;font-style:italic;margin:0 0 8px;color:var(--ink)}
-  .pull-quote cite{font-size:.85rem;color:var(--mid)}
-  .tag-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:48px;padding-top:32px;border-top:1px solid var(--border)}
-  .tag{background:var(--warm);color:var(--ink)}
-  .comparison-grid,.process-steps,.rights-grid,.timeline,.principal-card,.data-block,.data-grid,.principle,.case-study,.cta-block,.intro-note,.lesson,.callout{margin:32px 0}
-  .comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-  .comparison-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:24px}
-  .comparison-card ul{list-style:none;display:flex;flex-direction:column;gap:8px;font-size:.92rem}
-  .comparison-card .check{color:var(--mint);margin-right:8px;font-weight:700}
-  .comparison-card .cross{color:var(--coral);margin-right:8px;font-weight:700}
-  .process-steps .step{display:flex;gap:18px;margin-bottom:24px}
-  .step-num{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:var(--coral);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Fraunces',serif}
-  .step-body p{color:var(--mid);font-size:.95rem}
-  .rights-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  .right-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:20px}
-  .right-card .icon{font-size:1.6rem;margin-bottom:8px}
-  .right-card p{font-size:.9rem;color:var(--mid)}
-  .case-study{background:var(--warm);border-radius:var(--r);padding:24px}
-  .cs-label{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--coral);margin-bottom:8px}
-  .timeline-item{display:flex;gap:18px;margin-bottom:24px}
-  .timeline-dot{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--cream);display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Fraunces',serif}
-  .timeline-body p{color:var(--mid);font-size:.95rem}
-  .principal-card{display:flex;gap:18px;background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:24px}
-  .pc-icon{font-size:1.8rem}
-  .principal-card .location{font-size:.8rem;color:var(--coral);font-weight:700;margin:4px 0 12px}
-  .principal-card blockquote{font-style:italic;color:var(--mid);font-size:.95rem}
-  .data-block{background:var(--warm);border-radius:var(--r);padding:28px}
-  .data-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:0}
-  .data-item .pct{font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:var(--coral);display:block}
-  .data-item .desc{font-size:.85rem;color:var(--mid)}
-  .principle{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:22px}
-  .principle-header{display:flex;align-items:center;gap:12px;margin-bottom:8px}
-  .principle-icon{font-size:1.5rem}
-  p.principle{color:var(--mid);font-size:.95rem;margin:0}
-  .intro-note{background:var(--warm);border-radius:var(--r);padding:20px 24px;font-size:.95rem;color:var(--ink)}
-  .lesson-label{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--coral);margin-bottom:8px}
-  .callout{background:var(--warm);border-radius:var(--r);padding:18px 22px;font-size:.9rem;color:var(--ink)}
-  .closing{background:var(--ink);color:var(--cream);border-radius:var(--r2);padding:36px;margin:48px 0}
-  .closing h2{color:var(--cream)}
-  .closing p{color:#c9c9c4}
-  .cta-block{background:var(--ink);color:var(--cream);border-radius:var(--r2);padding:36px;text-align:center}
-  .cta-block h2{color:var(--cream)}
-  .cta-block p{color:#c9c9c4;margin-bottom:20px}
-  .cta-btn{display:inline-block;background:var(--coral);color:#fff;padding:14px 28px;border-radius:100px;text-decoration:none;font-weight:600;font-family:'Plus Jakarta Sans',sans-serif}
-  @media (max-width:700px){
-    .comparison-grid,.rights-grid,.stat-row,.data-grid{grid-template-columns:1fr}
-    .art-hero{padding:140px 6% 40px}
-  }
-
-</style>
+<title>What Schools Actually Need (And Why We Built Our Programs Around That) — Maekido</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="blog.css">
 </head>
-<body data-page="blog">
+<body>
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cring"></div>
-<div class="toast" id="toast"></div>
-
-<nav id="mainNav">
-  <a class="nav-logo" href="../index.html" id="navLogo"><img class="logo-svg" src="../assets/images/logo-black.svg" alt="Maekido" style="display:block;width:128px;height:43px"></a>
-  <ul class="nav-links">
-    <li><a href="../index.html" data-page="home">Home</a></li>
-    <li><a href="../summer.html" data-page="summer">Summer 2026</a></li>
-    <li><a href="../programs.html" data-page="programs">Programs</a></li>
-    <li><a href="../about.html" data-page="about">About</a></li>
-    <li><a href="../blog.html" data-page="blog">Blog</a></li>
-    <li><a href="../contact.html" data-page="contact">Contact</a></li>
-    <li><a class="nav-cta" href="../partner.html">Partner With Us →</a></li>
-  </ul>
-  <button class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></button>
+<nav class="bnav">
+  <a href="../index.html" class="logo" aria-label="Maekido — home"><img src="maekido-logo.svg" alt="Maekido" class="logo-img"></a>
+  <span class="sep">/</span>
+  <a href="../index.html#blog" class="back">← Back to Blog</a>
+  <span class="spacer"></span>
+  <a href="../index.html#enroll" class="cta">Partner With Us</a>
 </nav>
-<div class="mob-menu" id="mobMenu">
-  <a href="../index.html" data-page="home">Home</a>
-  <a href="../summer.html" data-page="summer">Summer 2026</a>
-  <a href="../programs.html" data-page="programs">Programs</a>
-  <a href="../about.html" data-page="about">About</a>
-  <a href="../blog.html" data-page="blog">Blog</a>
-  <a href="../contact.html" data-page="contact">Contact</a>
-  <a href="../partner.html" style="color:var(--coral);margin-top:8px">Partner With Us →</a>
-</div>
 
-<div class="art-hero">
-  <div class="sec-label">August 2026 · Strategy & Vision</div>
+<header class="bhero">
+  <div class="eyebrow">August 2026 · Strategy & Vision</div>
   <h1>What Schools Actually Need (And Why We Built Our Programs Around That)</h1>
-  <p class="bl">We talked to 40+ school principals before building our in-school programs. This is what they told us — and how it changed what we built.</p>
-  <div class="art-meta">
-    <div class="art-avatar">✍️</div>
+  <p class="subtitle">We talked to 40+ school principals before building our in-school programs. This is what they told us — and how it changed what we built.</p>
+  <div class="author-row">
+    <div class="author-avatar">M</div>
     <span><strong>Maekido Team</strong> · 11 min read</span>
   </div>
-</div>
+</header>
 
-<div class="art-cover hvc2">
-  🏫
+<div class="cover-placeholder bg-warm">
+  <span class="mark">◆</span>
   <p>One of the principals who shaped how we think about what we build</p>
 </div>
 
-<div class="art-body">
+<div class="content">
 
-  <p class="bl">Before we built a single curriculum module, we made a decision: we wouldn't design programs based on what we thought schools needed. We'd ask.</p>
-  <p class="bl">Over four months, we spoke to 43 school principals across six cities — from private schools in South Mumbai to government schools in the outskirts of Hyderabad. We asked them the same questions. We listened for the patterns. What we heard changed almost everything we'd planned to build.</p>
+
+  <p>Before we built a single curriculum module, we made a decision: we wouldn't design programs based on what we thought schools needed. We'd ask.</p>
+
+  <p>Over four months, we spoke to 43 school principals across six cities — from private schools in South Mumbai to government schools in the outskirts of Hyderabad. We asked them the same questions. We listened for the patterns. What we heard changed almost everything we'd planned to build.</p>
 
   <h2>What We Expected to Hear</h2>
-  <p class="bl">We went in expecting principals to tell us they needed "21st century skills" training, coding programs, and robotics workshops. That's the dominant narrative in education technology right now, and we assumed it would reflect what schools were actually asking for.</p>
-  <p class="bl">We were mostly wrong.</p>
 
-  <div class="highlight-box"><p>The most common thing principals said — in different words, across very different schools — was this: "Our students don't believe they're capable of anything beyond what the exam asks for."</p></div>
+  <p>We went in expecting principals to tell us they needed "21st century skills" training, coding programs, and robotics workshops. That's the dominant narrative in education technology right now, and we assumed it would reflect what schools were actually asking for.</p>
+
+  <p>We were mostly wrong.</p>
+
+  <div class="highlight-box">
+    <p>The most common thing principals said — in different words, across very different schools — was this: "Our students don't believe they're capable of anything beyond what the exam asks for."</p>
+  </div>
 
   <h2>What They Actually Said</h2>
-  <p class="bl">Here are four of the voices that shaped how we built Maekido's programs. Names have been changed, but the words are real.</p>
 
-  <div class="principal-card"><div class="pc-icon">🏫</div><div class="pc-body"><h4>Principal, government school, Hyderabad</h4><div class="location">700 students · Classes 6–10</div><blockquote>"We have smart children. Very smart. But they've been trained to think that their job is to remember what I tell them. When I ask them to have an opinion, they look at me like I've asked them to do something dangerous. That's what I need help changing."</blockquote></div></div>
-  <div class="principal-card"><div class="pc-icon">🏢</div><div class="pc-body"><h4>Principal, private school, Pune</h4><div class="location">1,200 students · Classes 1–12</div><blockquote>"Parents ask me for coding programs, AI programs, robotics. I put those in. And the students learn the tools. But they don't know what to build with them. No one has taught them to ask a question that the tool should answer. That's the actual gap."</blockquote></div></div>
-  <div class="principal-card"><div class="pc-icon">🏫</div><div class="pc-body"><h4>Principal, girls' school, Chennai</h4><div class="location">450 students · Classes 6–12</div><blockquote>"My girls perform exceptionally on exams. They go quiet in group discussions. They don't argue, they don't question. They're brilliant at answering — and terrified of being wrong. I need something that teaches them that being wrong is the beginning of something, not the end."</blockquote></div></div>
-  <div class="principal-card"><div class="pc-icon">🏗️</div><div class="pc-body"><h4>Principal, CBSE school, Bengaluru</h4><div class="location">850 students · Classes 1–10</div><blockquote>"Every vendor who comes to me talks about what their program teaches. Nobody asks me what my students are going home and doing differently after the program. That's the only thing I actually care about."</blockquote></div></div>
+  <p>Here are four of the voices that shaped how we built Maekido's programs. Names have been changed, but the words are real.</p>
+
+  <div class="principal-card">
+    <div class="pc-icon">🏫</div>
+    <div class="pc-body">
+      <h4>Principal, government school, Hyderabad</h4>
+      <div class="location">700 students · Classes 6–10</div>
+      <blockquote>"We have smart children. Very smart. But they've been trained to think that their job is to remember what I tell them. When I ask them to have an opinion, they look at me like I've asked them to do something dangerous. That's what I need help changing."</blockquote>
+    </div>
+  </div>
+
+  <div class="principal-card">
+    <div class="pc-icon">🏢</div>
+    <div class="pc-body">
+      <h4>Principal, private school, Pune</h4>
+      <div class="location">1,200 students · Classes 1–12</div>
+      <blockquote>"Parents ask me for coding programs, AI programs, robotics. I put those in. And the students learn the tools. But they don't know what to build with them. No one has taught them to ask a question that the tool should answer. That's the actual gap."</blockquote>
+    </div>
+  </div>
+
+  <div class="principal-card">
+    <div class="pc-icon">🏫</div>
+    <div class="pc-body">
+      <h4>Principal, girls' school, Chennai</h4>
+      <div class="location">450 students · Classes 6–12</div>
+      <blockquote>"My girls perform exceptionally on exams. They go quiet in group discussions. They don't argue, they don't question. They're brilliant at answering — and terrified of being wrong. I need something that teaches them that being wrong is the beginning of something, not the end."</blockquote>
+    </div>
+  </div>
+
+  <div class="principal-card">
+    <div class="pc-icon">🏗️</div>
+    <div class="pc-body">
+      <h4>Principal, CBSE school, Bengaluru</h4>
+      <div class="location">850 students · Classes 1–10</div>
+      <blockquote>"Every vendor who comes to me talks about what their program teaches. Nobody asks me what my students are going home and doing differently after the program. That's the only thing I actually care about."</blockquote>
+    </div>
+  </div>
 
   <h2>The Pattern We Heard</h2>
-  <p class="bl">Across 43 conversations, the themes were strikingly consistent:</p>
+
+  <p>Across 43 conversations, the themes were strikingly consistent:</p>
 
   <div class="data-block">
     <h3>What principals said they actually needed:</h3>
     <div class="data-grid">
-      <div class="data-item"><span class="pct">78%</span><span class="desc">Said their students struggled with open-ended problems where there was no single right answer</span></div>
-      <div class="data-item"><span class="pct">71%</span><span class="desc">Said students were afraid of public failure — in discussions, presentations, peer feedback</span></div>
-      <div class="data-item"><span class="pct">83%</span><span class="desc">Said they wanted programs that changed how students saw themselves, not just what they could do</span></div>
-      <div class="data-item"><span class="pct">69%</span><span class="desc">Said previous external programs left no visible change in student behavior after they ended</span></div>
+      <div class="data-item">
+        <span class="pct">78%</span>
+        <span class="desc">Said their students struggled with open-ended problems where there was no single right answer</span>
+      </div>
+      <div class="data-item">
+        <span class="pct">71%</span>
+        <span class="desc">Said students were afraid of public failure — in discussions, presentations, peer feedback</span>
+      </div>
+      <div class="data-item">
+        <span class="pct">83%</span>
+        <span class="desc">Said they wanted programs that changed how students saw themselves, not just what they could do</span>
+      </div>
+      <div class="data-item">
+        <span class="pct">69%</span>
+        <span class="desc">Said previous external programs left no visible change in student behavior after they ended</span>
+      </div>
     </div>
   </div>
 
   <h2>How This Changed What We Built</h2>
-  <p class="bl">The conversations pushed us to build around a different question. Not "what skills do students need?" but "what do students need to believe about themselves before any skill will stick?"</p>
-  <p class="bl">Four beliefs emerged as foundational:</p>
 
-  <div class="principle"><div class="principle-header"><div class="principle-icon">🎯</div><h3>I am capable of figuring things out</h3></div><p class="principle">Not just following instructions — actually working through an ambiguous problem without a guaranteed right answer. This belief is the prerequisite for everything else.</p></div>
-  <div class="principle"><div class="principle-header"><div class="principle-icon">🔁</div><h3>Being wrong is information, not verdict</h3></div><p class="principle">Students who see mistakes as evidence of their inadequacy stop taking risks. Students who see mistakes as data points become iterators. The difference is enormous.</p></div>
+  <p>The conversations pushed us to build around a different question. Not "what skills do students need?" but "what do students need to believe about themselves before any skill will stick?"</p>
 
-  <div class="inline-img"><div class="inline-img-placeholder hvc3">🌱<p>A student in Pune working through their third iteration of a board game design</p></div></div>
+  <p>Four beliefs emerged as foundational:</p>
 
-  <div class="principle"><div class="principle-header"><div class="principle-icon">🗣️</div><h3>My perspective has value</h3></div><p class="principle">Students who have been trained to find the teacher's answer often stop forming their own. Rebuilding the belief that your own perspective is worth contributing is one of the deepest things a program can do.</p></div>
-  <div class="principle"><div class="principle-header"><div class="principle-icon">🔗</div><h3>What I learn here applies beyond here</h3></div><p class="principle">The Bengaluru principal was right: a program that only works inside its own session has failed. Every Maekido session is designed so the thing practiced can be picked up and used outside the room.</p></div>
+  <div class="principle">
+    <div class="principle-header">
+      <div class="principle-icon">🎯</div>
+      <h3>I am capable of figuring things out</h3>
+    </div>
+    <p class="principle">Not just following instructions — actually working through an ambiguous problem without a guaranteed right answer. This belief is the prerequisite for everything else.</p>
+  </div>
+
+  <div class="principle">
+    <div class="principle-header">
+      <div class="principle-icon">🔁</div>
+      <h3>Being wrong is information, not verdict</h3>
+    </div>
+    <p class="principle">Students who see mistakes as evidence of their inadequacy stop taking risks. Students who see mistakes as data points become iterators. The difference is enormous.</p>
+  </div>
+
+  <div class="inline-img">
+    <div class="inline-img-placeholder bg-green"><span class="mark">◆</span>
+      <p>A student in Pune working through their third iteration of a board game design</p>
+    </div>
+  </div>
+
+  <div class="principle">
+    <div class="principle-header">
+      <div class="principle-icon">🗣️</div>
+      <h3>My perspective has value</h3>
+    </div>
+    <p class="principle">Students who have been trained to find the teacher's answer often stop forming their own. Rebuilding the belief that your own perspective is worth contributing is one of the deepest things a program can do.</p>
+  </div>
+
+  <div class="principle">
+    <div class="principle-header">
+      <div class="principle-icon">🔗</div>
+      <h3>What I learn here applies beyond here</h3>
+    </div>
+    <p class="principle">The Bengaluru principal was right: a program that only works inside its own session has failed. Every Maekido session is designed so the thing practiced can be picked up and used outside the room.</p>
+  </div>
 
   <h2>What This Looks Like In Practice</h2>
-  <p class="bl">These four beliefs show up in every design decision we make — including ones that look small from the outside:</p>
-  <p class="bl">We don't use points or rankings in our programs, because they shift the goal from making something real to outscoring someone else. We don't give model answers or "the best" examples at the start of a session, because showing students the ceiling before they've tried to build their own tends to make them copy rather than create. We always end sessions with a "what would you do differently?" question — not because we're evaluating students, but because iteration is a habit we're building.</p>
 
-  <div class="inline-img"><div class="inline-img-placeholder hvc4">📋<p>Designing the curriculum — principal feedback sessions on the wall behind us</p></div></div>
+  <p>These four beliefs show up in every design decision we make — including ones that look small from the outside:</p>
+
+  <p>We don't use points or rankings in our programs, because they shift the goal from making something real to outscoring someone else. We don't give model answers or "the best" examples at the start of a session, because showing students the ceiling before they've tried to build their own tends to make them copy rather than create. We always end sessions with a "what would you do differently?" question — not because we're evaluating students, but because iteration is a habit we're building.</p>
+
+  <div class="inline-img">
+    <div class="inline-img-placeholder bg-teal"><span class="mark">◆</span>
+      <p>Designing the curriculum — principal feedback sessions on the wall behind us</p>
+    </div>
+  </div>
 
   <h2>What We're Still Getting Wrong</h2>
-  <p class="bl">This transparency goes both ways. Even with 43 principal conversations as our foundation, we're still making mistakes.</p>
-  <p class="bl">We struggle with programs that run only once. A single session can spark something, but it's rarely enough to change a belief. We know this. We're still working on how to build lasting presence in schools that don't have budget for multi-session programs.</p>
-  <p class="bl">We also haven't solved the evaluation problem. Our programs change how students feel about creative work — we can measure that. We're less good at showing the downstream impact on academic performance, social confidence, or long-term creative practice. Those things matter, and we owe the schools that work with us better evidence.</p>
+
+  <p>This transparency goes both ways. Even with 43 principal conversations as our foundation, we're still making mistakes.</p>
+
+  <p>We struggle with programs that run only once. A single session can spark something, but it's rarely enough to change a belief. We know this. We're still working on how to build lasting presence in schools that don't have budget for multi-session programs.</p>
+
+  <p>We also haven't solved the evaluation problem. Our programs change how students feel about creative work — we can measure that. We're less good at showing the downstream impact on academic performance, social confidence, or long-term creative practice. Those things matter, and we owe the schools that work with us better evidence.</p>
 
   <h2>The Principles We're Holding</h2>
-  <p class="bl">We came out of those 43 conversations with principles we've tried to hold even when they've made things harder:</p>
-  <p class="bl"><strong>Design from the actual need, not the perceived need.</strong> The market says schools need coding. The principals say schools need students who believe they're capable of thinking. We build for what the principals said.</p>
-  <p class="bl"><strong>Behavior change over content delivery.</strong> We care less about what students can list after a program and more about what they're doing differently. A student who signs up for an art elective is more valuable data than a student who scores well on a design quiz.</p>
-  <p class="bl"><strong>No program is better than a bad program.</strong> A program that runs once, leaves nothing behind, and lets a school tick a box for "creative education" does active harm. It uses up the goodwill, the budget, and the student enthusiasm that a better program could have used. We'd rather not run in a school than run something extractive.</p>
 
-  <div class="highlight-box"><p>The schools told us what they needed. Our only job is to keep building toward it — and to stay honest about how far we still have to go.</p></div>
+  <p>We came out of those 43 conversations with principles we've tried to hold even when they've made things harder:</p>
+
+  <p><strong>Design from the actual need, not the perceived need.</strong> The market says schools need coding. The principals say schools need students who believe they're capable of thinking. We build for what the principals said.</p>
+
+  <p><strong>Behavior change over content delivery.</strong> We care less about what students can list after a program and more about what they're doing differently. A student who signs up for an art elective is more valuable data than a student who scores well on a design quiz.</p>
+
+  <p><strong>No program is better than a bad program.</strong> A program that runs once, leaves nothing behind, and lets a school tick a box for "creative education" does active harm. It uses up the goodwill, the budget, and the student enthusiasm that a better program could have used. We'd rather not run in a school than run something extractive.</p>
+
+  <div class="highlight-box">
+    <p>The schools told us what they needed. Our only job is to keep building toward it — and to stay honest about how far we still have to go.</p>
+  </div>
 
   <div class="cta-block">
     <h2>Is your school the next conversation?</h2>
     <p>We're always talking to new schools. If you're a principal, administrator, or educator who wants to share what your students actually need — we want to hear from you. No pitch, no proposal. Just a conversation.</p>
-    <a href="../contact.html" class="cta-btn">Get in touch →</a>
+    <a href="#" class="cta-btn">Get in touch →</a>
   </div>
 
   <div class="tag-list">
-    <span class="tag" style="background:var(--warm);color:var(--ink)">School Partnerships</span>
-    <span class="tag" style="background:var(--warm);color:var(--ink)">Education Design</span>
-    <span class="tag" style="background:var(--warm);color:var(--ink)">Research</span>
-    <span class="tag" style="background:var(--warm);color:var(--ink)">Strategy</span>
-    <span class="tag" style="background:var(--warm);color:var(--ink)">Creative Education</span>
-    <span class="tag" style="background:var(--warm);color:var(--ink)">India</span>
+    <span class="tag">School Partnerships</span>
+    <span class="tag">Education Design</span>
+    <span class="tag">Research</span>
+    <span class="tag">Strategy</span>
+    <span class="tag">Creative Education</span>
+    <span class="tag">India</span>
   </div>
 </div>
 
-<footer>
-  <div class="ft-inner">
-    <div class="ft-top">
-      <div class="ft-brand">
-        <img class="ft-logo-slot" src="../assets/images/logo-white.svg" alt="Maekido" style="display:block;width:155px;height:auto">
-        <p>Bringing design thinking, creativity, and real-world skills to schools across India.<br>Future Makers Start Here.</p>
-        <div class="social-row"><a class="soc" href="#" onclick="showToast('Instagram')" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.42.56.22.96.48 1.38.9.42.42.68.82.9 1.38.17.42.37 1.06.42 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.42 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.17-1.06.37-2.23.42-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.42a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.17-.42-.37-1.06-.42-2.23C3.41 15.58 3.4 15.2 3.4 12s.01-3.58.07-4.85c.05-1.17.25-1.8.42-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.17 1.06-.37 2.23-.42C8.42 2.21 8.8 2.2 12 2.2zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.25 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.16 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.25 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.25-1.77-.41-2.19a3.63 3.63 0 0 0-.88-1.35 3.63 3.63 0 0 0-1.35-.88c-.42-.16-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.42 5.42 0 1 1 0 10.84 5.42 5.42 0 0 1 0-10.84zm0 1.62a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6zm5.6-.43a1.27 1.27 0 1 1-2.54 0 1.27 1.27 0 0 1 2.54 0z"/></svg></a><a class="soc" href="#" onclick="showToast('Facebook')" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a><a class="soc" href="#" onclick="showToast('LinkedIn')" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.78 13.02H3.55V9h3.57v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.74v20.5C0 23.2.8 24 1.77 24h20.45c.98 0 1.78-.8 1.78-1.76V1.74C24 .78 23.2 0 22.22 0z"/></svg></a><a class="soc" href="#" onclick="showToast('WhatsApp: +91 720 770 9444')" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.57-.49-.5-.67-.5l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.4 9.4 0 0 1-4.79-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.38 9.38 0 0 1-1.44-5A9.43 9.43 0 0 1 18.7 5.84a9.37 9.37 0 0 1 2.76 6.65 9.43 9.43 0 0 1-9.42 9.01zM20.52 3.99A11.2 11.2 0 0 0 12.04.5 11.27 11.27 0 0 0 .77 11.76c0 1.98.52 3.92 1.5 5.63L.68 23.5l6.25-1.64a11.23 11.23 0 0 0 5.37 1.37h.01a11.27 11.27 0 0 0 11.27-11.26c0-3.01-1.17-5.84-3.06-7.98z"/></svg></a><a class="soc" href="#" onclick="showToast('YouTube')" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14C4.5 20.45 12 20.45 12 20.45s7.5 0 9.38-.51a3.02 3.02 0 0 0 2.12-2.14A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.6 15.57V8.43L15.8 12l-6.2 3.57z"/></svg></a></div>
-      </div>
-      <div class="ft-col"><h4>Programs</h4><ul><li><a href="../programs.html">UI/UX Design</a></li><li><a href="../programs.html">Gamers Lab</a></li><li><a href="../programs.html">Makers Canvas</a></li><li><a href="../programs.html">Project Abhay</a></li><li><a href="../programs.html">Design Thinking</a></li><li><a href="../programs.html">Robotics</a></li></ul></div>
-      <div class="ft-col"><h4>School Programs</h4><ul><li><a href="../partner.html">Partner With Us</a></li><li><a href="../contact.html">Schedule a Visit</a></li><li><a href="../summer.html">Summer 2026 Recap</a></li><li><a href="../index.html#testimonials">Testimonials</a></li></ul></div>
-      <div class="ft-col"><h4>Company</h4><ul><li><a href="../about.html">About Maekido</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../contact.html">Contact Us</a></li><li><a href="mailto:contact@maekido.in">contact@maekido.in</a></li><li><a onclick="showToast('Hyderabad, India 📍')">Hyderabad, India</a></li></ul></div>
-    </div>
-    <div class="ft-bottom"><span>© 2026 Maekido. Made with ❤️ in Hyderabad.</span><div class="social-row"><a class="btn btn-ghost btn-sm" href="../partner.html">Partner With Us</a></div></div>
-  </div>
+<section class="article-cta">
+  <div class="ac-eyebrow">• Bring Maekido to your school</div>
+  <h3>Want stories like this from your own classrooms?</h3>
+  <p>We run in-school and after-school creative programs across India. Let's make something with your students.</p>
+  <a href="../index.html#enroll" class="ac-btn">Partner With Us →</a>
+</section>
+
+<footer class="bfooter">
+  © 2026 <span class="logo">maekido</span> · Knowledge that Moves, Creation that Stays · <a href="../index.html#blog">More stories →</a>
 </footer>
 
-<script src="../assets/js/config.js"></script>
-<script src="../assets/js/main.js"></script>
-<script src="../assets/js/forms.js"></script>
 </body>
 </html>

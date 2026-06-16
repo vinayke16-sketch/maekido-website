@@ -3,206 +3,159 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Student Who Said She Wasn't Artistic (Until She Made a Mandala) – Maekido</title>
-<meta name="description" content="She almost didn't sign up. \"I can't draw,\" she said. Three hours into her first Mandala session, she hadn't looked up once. This is her story.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/styles.css">
-<style>
-
-  .art-hero{padding:160px 5% 60px;max-width:840px;margin:0 auto;text-align:left}
-  .art-hero h1{font-family:'Fraunces',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:700;line-height:1.15;margin:18px 0 18px;color:var(--ink)}
-  .art-hero .bl{max-width:640px}
-  .art-meta{display:flex;align-items:center;gap:10px;font-size:.9rem;color:var(--mid);margin-top:24px;font-family:'Plus Jakarta Sans',sans-serif}
-  .art-avatar{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;background:rgba(255,107,74,.12)}
-  .art-cover{max-width:840px;margin:0 auto 40px;border-radius:var(--r2);height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;font-size:4.5rem}
-  .art-cover p{font-family:'Fraunces',serif;font-style:italic;font-size:1rem;color:var(--ink);opacity:.7}
-  .art-body{max-width:760px;margin:0 auto;padding:0 5% 80px}
-  .art-body h2{font-family:'Fraunces',serif;font-size:clamp(1.4rem,2.5vw,2rem);font-weight:700;margin:48px 0 18px;color:var(--ink);line-height:1.2}
-  .art-body h3{font-family:'Fraunces',serif;font-size:1.15rem;font-weight:700;margin:0 0 8px;color:var(--ink)}
-  .art-body h4{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:700;margin:0 0 8px;color:var(--ink)}
-  .art-body p.bl{margin-bottom:20px}
-  .highlight-box{background:var(--warm);border-left:4px solid var(--coral);border-radius:0 var(--r) var(--r) 0;padding:24px 28px;margin:32px 0}
-  .highlight-box p{margin:0;font-style:italic;font-size:1.05rem;color:var(--ink)}
-  .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:40px 0}
-  .stat-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:22px;text-align:center}
-  .stat-card .num{font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:var(--coral);display:block}
-  .stat-card .label{font-size:.8rem;color:var(--mid);margin-top:6px}
-  .inline-img{border-radius:var(--r);margin:32px 0;overflow:hidden;border:1px solid var(--border)}
-  .inline-img-placeholder{height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;font-size:3rem;text-align:center}
-  .inline-img-placeholder p{font-size:.85rem;color:var(--mid);max-width:80%}
-  .pull-quote{border-left:4px solid var(--sun);padding:16px 24px;margin:32px 0;background:rgba(245,200,66,.1);border-radius:0 var(--r) var(--r) 0}
-  .pull-quote p{font-family:'Fraunces',serif;font-size:1.3rem;font-style:italic;margin:0 0 8px;color:var(--ink)}
-  .pull-quote cite{font-size:.85rem;color:var(--mid)}
-  .tag-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:48px;padding-top:32px;border-top:1px solid var(--border)}
-  .tag{background:var(--warm);color:var(--ink)}
-  .comparison-grid,.process-steps,.rights-grid,.timeline,.principal-card,.data-block,.data-grid,.principle,.case-study,.cta-block,.intro-note,.lesson,.callout{margin:32px 0}
-  .comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-  .comparison-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:24px}
-  .comparison-card ul{list-style:none;display:flex;flex-direction:column;gap:8px;font-size:.92rem}
-  .comparison-card .check{color:var(--mint);margin-right:8px;font-weight:700}
-  .comparison-card .cross{color:var(--coral);margin-right:8px;font-weight:700}
-  .process-steps .step{display:flex;gap:18px;margin-bottom:24px}
-  .step-num{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:var(--coral);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Fraunces',serif}
-  .step-body p{color:var(--mid);font-size:.95rem}
-  .rights-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  .right-card{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:20px}
-  .right-card .icon{font-size:1.6rem;margin-bottom:8px}
-  .right-card p{font-size:.9rem;color:var(--mid)}
-  .case-study{background:var(--warm);border-radius:var(--r);padding:24px}
-  .cs-label{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--coral);margin-bottom:8px}
-  .timeline-item{display:flex;gap:18px;margin-bottom:24px}
-  .timeline-dot{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--cream);display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'Fraunces',serif}
-  .timeline-body p{color:var(--mid);font-size:.95rem}
-  .principal-card{display:flex;gap:18px;background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:24px}
-  .pc-icon{font-size:1.8rem}
-  .principal-card .location{font-size:.8rem;color:var(--coral);font-weight:700;margin:4px 0 12px}
-  .principal-card blockquote{font-style:italic;color:var(--mid);font-size:.95rem}
-  .data-block{background:var(--warm);border-radius:var(--r);padding:28px}
-  .data-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:0}
-  .data-item .pct{font-family:'Fraunces',serif;font-size:2rem;font-weight:800;color:var(--coral);display:block}
-  .data-item .desc{font-size:.85rem;color:var(--mid)}
-  .principle{background:#fff;border:1px solid var(--border);border-radius:var(--r);padding:22px}
-  .principle-header{display:flex;align-items:center;gap:12px;margin-bottom:8px}
-  .principle-icon{font-size:1.5rem}
-  p.principle{color:var(--mid);font-size:.95rem;margin:0}
-  .intro-note{background:var(--warm);border-radius:var(--r);padding:20px 24px;font-size:.95rem;color:var(--ink)}
-  .lesson-label{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--coral);margin-bottom:8px}
-  .callout{background:var(--warm);border-radius:var(--r);padding:18px 22px;font-size:.9rem;color:var(--ink)}
-  .closing{background:var(--ink);color:var(--cream);border-radius:var(--r2);padding:36px;margin:48px 0}
-  .closing h2{color:var(--cream)}
-  .closing p{color:#c9c9c4}
-  .cta-block{background:var(--ink);color:var(--cream);border-radius:var(--r2);padding:36px;text-align:center}
-  .cta-block h2{color:var(--cream)}
-  .cta-block p{color:#c9c9c4;margin-bottom:20px}
-  .cta-btn{display:inline-block;background:var(--coral);color:#fff;padding:14px 28px;border-radius:100px;text-decoration:none;font-weight:600;font-family:'Plus Jakarta Sans',sans-serif}
-  @media (max-width:700px){
-    .comparison-grid,.rights-grid,.stat-row,.data-grid{grid-template-columns:1fr}
-    .art-hero{padding:140px 6% 40px}
-  }
-
-</style>
+<title>The Student Who Said She Wasn't Artistic (Until She Made a Mandala) — Maekido</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="blog.css">
 </head>
-<body data-page="blog">
+<body>
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cring"></div>
-<div class="toast" id="toast"></div>
-
-<nav id="mainNav">
-  <a class="nav-logo" href="../index.html" id="navLogo"><img class="logo-svg" src="../assets/images/logo-black.svg" alt="Maekido" style="display:block;width:128px;height:43px"></a>
-  <ul class="nav-links">
-    <li><a href="../index.html" data-page="home">Home</a></li>
-    <li><a href="../summer.html" data-page="summer">Summer 2026</a></li>
-    <li><a href="../programs.html" data-page="programs">Programs</a></li>
-    <li><a href="../about.html" data-page="about">About</a></li>
-    <li><a href="../blog.html" data-page="blog">Blog</a></li>
-    <li><a href="../contact.html" data-page="contact">Contact</a></li>
-    <li><a class="nav-cta" href="../partner.html">Partner With Us →</a></li>
-  </ul>
-  <button class="hamburger" id="hamburger" onclick="toggleMob()"><span></span><span></span><span></span></button>
+<nav class="bnav">
+  <a href="../index.html" class="logo" aria-label="Maekido — home"><img src="maekido-logo.svg" alt="Maekido" class="logo-img"></a>
+  <span class="sep">/</span>
+  <a href="../index.html#blog" class="back">← Back to Blog</a>
+  <span class="spacer"></span>
+  <a href="../index.html#enroll" class="cta">Partner With Us</a>
 </nav>
-<div class="mob-menu" id="mobMenu">
-  <a href="../index.html" data-page="home">Home</a>
-  <a href="../summer.html" data-page="summer">Summer 2026</a>
-  <a href="../programs.html" data-page="programs">Programs</a>
-  <a href="../about.html" data-page="about">About</a>
-  <a href="../blog.html" data-page="blog">Blog</a>
-  <a href="../contact.html" data-page="contact">Contact</a>
-  <a href="../partner.html" style="color:var(--coral);margin-top:8px">Partner With Us →</a>
-</div>
 
-<div class="art-hero">
-  <div class="sec-label">June 2026 · Student Stories</div>
+<header class="bhero">
+  <div class="eyebrow">June 2026 · Student Stories</div>
   <h1>The Student Who Said She Wasn't Artistic (Until She Made a Mandala)</h1>
-  <p class="bl">She almost didn't sign up. "I can't draw," she said. Three hours into her first Mandala session, she hadn't looked up once. This is her story.</p>
-  <div class="art-meta">
-    <div class="art-avatar">✍️</div>
+  <p class="subtitle">She almost didn't sign up. "I can't draw," she said. Three hours into her first Mandala session, she hadn't looked up once. This is her story.</p>
+  <div class="author-row">
+    <div class="author-avatar">M</div>
     <span><strong>Maekido Team</strong> · 6 min read</span>
   </div>
-</div>
+</header>
 
-<div class="art-cover hvc1">
-  🌸
+<div class="cover-placeholder bg-sun">
+  <span class="mark">◆</span>
   <p>Priya's first mandala — completed in session three</p>
 </div>
 
-<div class="art-body">
+<div class="content">
 
-  <p class="bl">Priya is 15. She is precise, methodical, and — by her own firm declaration — "not artistic." She took biology notes in color-coded columns. She made spreadsheets for her study schedule. She had never voluntarily made anything that could be called art.</p>
-  <p class="bl">When her school signed up for Maekido's Mandala Art workshop, Priya almost didn't go. Her friend convinced her to come for the first session. "Just to see," she said. "You can always leave."</p>
-  <p class="bl">She did not leave.</p>
+
+  <p>Priya is 15. She is precise, methodical, and — by her own firm declaration — "not artistic." She took biology notes in color-coded columns. She made spreadsheets for her study schedule. She had never voluntarily made anything that could be called art.</p>
+
+  <p>When her school signed up for Maekido's Mandala Art workshop, Priya almost didn't go. Her friend convinced her to come for the first session. "Just to see," she said. "You can always leave."</p>
+
+  <p>She did not leave.</p>
 
   <h2>Why Priya Said She Couldn't Draw</h2>
-  <p class="bl">The story Priya had about herself — "I'm not artistic" — is one we hear constantly. It usually traces back to a specific moment. For Priya, it was a class art project in fifth grade, when her painting of a landscape was held up as an example of "what not to do." She laughed about it when she told us. But she'd believed it for five years.</p>
-  <p class="bl">The problem isn't that children aren't artistic. The problem is that the version of art they're taught in school is narrow. It rewards a specific kind of talent — realistic representation, fine motor precision, a particular sense of proportion — and calls that "art." Everything else gets quietly filed under "not good at this."</p>
 
-  <div class="highlight-box"><p>Mandala art doesn't ask you to be good at drawing. It asks you to follow a pattern, one step at a time. The complexity emerges from repetition, not talent. That's why it works for people who've been told they can't create.</p></div>
+  <p>The story Priya had about herself — "I'm not artistic" — is one we hear constantly. It usually traces back to a specific moment. For Priya, it was a class art project in fifth grade, when her painting of a landscape was held up as an example of "what not to do." She laughed about it when she told us. But she'd believed it for five years.</p>
 
-  <h2>Session One: The Suspicion Phase</h2>
-  <p class="bl">Priya's first session was mostly suspicion. She watched others, held her pen carefully, and checked her circles against the guide with an almost scientific precision. She didn't believe it would look good. She kept checking.</p>
-  <p class="bl">About ninety minutes in, she stopped checking. She was deep in the rhythm of repeating a petal pattern. When she looked up, the table was quiet. Everyone was absorbed. She looked at what she'd made.</p>
-  <p class="bl">"It didn't look like mine," she told us later. "It looked like something I'd see in a shop."</p>
+  <p>The problem isn't that children aren't artistic. The problem is that the version of art they're taught in school is narrow. It rewards a specific kind of talent — realistic representation, fine motor precision, a particular sense of proportion — and calls that "art." Everything else gets quietly filed under "not good at this."</p>
 
-  <div class="inline-img"><div class="inline-img-placeholder hvc1">✏️<p>Session one — students learning the foundational circle and division method</p></div></div>
-
-  <h2>What Changed By Session Three</h2>
-  <p class="bl">By the third session, Priya had started experimenting. She was no longer following the template exactly. She was varying the size of repeating elements, introducing a second color into a pattern that was supposed to use one, choosing a different line weight than the one demonstrated.</p>
-  <p class="bl">When we pointed this out, she seemed surprised. "I was just doing what felt right," she said.</p>
-  <p class="bl">That's what creative confidence sounds like when it starts to arrive. Not "I'm an artist now." Just: doing what feels right, and trusting it.</p>
-
-  <div class="timeline">
-    <div class="timeline-item"><div class="timeline-dot">1</div><div class="timeline-body"><h4>Session 1 — "I'll probably mess this up"</h4><p>Careful, precise, checking constantly. Following every instruction exactly. Producing a beautiful first mandala and not believing it was hers.</p></div></div>
-    <div class="timeline-item"><div class="timeline-dot">2</div><div class="timeline-body"><h4>Session 2 — "Okay, this is kind of relaxing"</h4><p>Faster now. Less checking. Starting to trust the repetition. Trying a slightly different spacing on one pattern. Deciding she likes it.</p></div></div>
-    <div class="timeline-item"><div class="timeline-dot">3</div><div class="timeline-body"><h4>Session 3 — "Can I try something?"</h4><p>Deviating from the template. Adding a second colour uninstructed. Making the outermost ring her own. Asking to take extra supplies home.</p></div></div>
-    <div class="timeline-item"><div class="timeline-dot">4</div><div class="timeline-body"><h4>Session 4 — Full ownership</h4><p>Designing from memory. Helping another student who was frustrated. Saying, entirely unprompted: "I actually think I'm good at this."</p></div></div>
+  <div class="highlight-box">
+    <p>Mandala art doesn't ask you to be good at drawing. It asks you to follow a pattern, one step at a time. The complexity emerges from repetition, not talent. That's why it works for people who've been told they can't create.</p>
   </div>
 
-  <div class="pull-quote"><p>"I actually think I'm good at this."</p><cite>— Priya, age 15, Session 4</cite></div>
+  <h2>Session One: The Suspicion Phase</h2>
+
+  <p>Priya's first session was mostly suspicion. She watched others, held her pen carefully, and checked her circles against the guide with an almost scientific precision. She didn't believe it would look good. She kept checking.</p>
+
+  <p>About ninety minutes in, she stopped checking. She was deep in the rhythm of repeating a petal pattern. When she looked up, the table was quiet. Everyone was absorbed. She looked at what she'd made.</p>
+
+  <p>"It didn't look like mine," she told us later. "It looked like something I'd see in a shop."</p>
+
+  <div class="inline-img">
+    <div class="inline-img-placeholder bg-warm"><span class="mark">◆</span>
+      <p>Session one — students learning the foundational circle and division method</p>
+    </div>
+  </div>
+
+  <h2>What Changed By Session Three</h2>
+
+  <p>By the third session, Priya had started experimenting. She was no longer following the template exactly. She was varying the size of repeating elements, introducing a second color into a pattern that was supposed to use one, choosing a different line weight than the one demonstrated.</p>
+
+  <p>When we pointed this out, she seemed surprised. "I was just doing what felt right," she said.</p>
+
+  <p>That's what creative confidence sounds like when it starts to arrive. Not "I'm an artist now." Just: doing what feels right, and trusting it.</p>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-dot">1</div>
+      <div class="timeline-body">
+        <h4>Session 1 — "I'll probably mess this up"</h4>
+        <p>Careful, precise, checking constantly. Following every instruction exactly. Producing a beautiful first mandala and not believing it was hers.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">2</div>
+      <div class="timeline-body">
+        <h4>Session 2 — "Okay, this is kind of relaxing"</h4>
+        <p>Faster now. Less checking. Starting to trust the repetition. Trying a slightly different spacing on one pattern. Deciding she likes it.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">3</div>
+      <div class="timeline-body">
+        <h4>Session 3 — "Can I try something?"</h4>
+        <p>Deviating from the template. Adding a second colour uninstructed. Making the outermost ring her own. Asking to take extra supplies home.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot">4</div>
+      <div class="timeline-body">
+        <h4>Session 4 — Full ownership</h4>
+        <p>Designing from memory. Helping another student who was frustrated. Saying, entirely unprompted: "I actually think I'm good at this."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pull-quote">
+    <p>"I actually think I'm good at this."</p>
+    <cite>— Priya, age 15, Session 4</cite>
+  </div>
 
   <h2>Why This Matters Beyond the Mandala</h2>
-  <p class="bl">The mandala itself isn't the point. The point is what it represents: a student who had a fixed story about herself — "I'm not creative" — and who now has evidence that the story was wrong.</p>
-  <p class="bl">That shift is harder to achieve than it sounds. Fixed self-narratives are powerful. They determine what we sign up for, what we try, what we give ourselves permission to enjoy. A student who believes she isn't artistic will avoid creative challenges for the rest of her life. A student who has proven herself wrong once has a very different relationship with risk.</p>
 
-  <div class="inline-img"><div class="inline-img-placeholder hvc2">🌸<p>Final showcase — students displaying their completed mandala series</p></div></div>
+  <p>The mandala itself isn't the point. The point is what it represents: a student who had a fixed story about herself — "I'm not creative" — and who now has evidence that the story was wrong.</p>
+
+  <p>That shift is harder to achieve than it sounds. Fixed self-narratives are powerful. They determine what we sign up for, what we try, what we give ourselves permission to enjoy. A student who believes she isn't artistic will avoid creative challenges for the rest of her life. A student who has proven herself wrong once has a very different relationship with risk.</p>
+
+  <div class="inline-img">
+    <div class="inline-img-placeholder bg-amber"><span class="mark">◆</span>
+      <p>Final showcase — students displaying their completed mandala series</p>
+    </div>
+  </div>
 
   <h2>Priya's Next Chapter</h2>
-  <p class="bl">After the workshop ended, Priya asked if she could join the advanced Mandala session. She also, for the first time in her memory, chose art as her elective for the next term.</p>
-  <p class="bl">She's still precise and methodical. She still color-codes her notes. But she no longer says she can't draw. She says: "I haven't tried that yet."</p>
-  <p class="bl">That's a different kind of sentence. It leaves things open. It leaves room for being surprised.</p>
 
-  <div class="highlight-box"><p>"I used to think creativity was something you either had or you didn't. Now I think it's something that happens when you stop worrying about being bad at it." — Priya, post-program reflection</p></div>
+  <p>After the workshop ended, Priya asked if she could join the advanced Mandala session. She also, for the first time in her memory, chose art as her elective for the next term.</p>
+
+  <p>She's still precise and methodical. She still color-codes her notes. But she no longer says she can't draw. She says: "I haven't tried that yet."</p>
+
+  <p>That's a different kind of sentence. It leaves things open. It leaves room for being surprised.</p>
+
+  <div class="highlight-box">
+    <p>"I used to think creativity was something you either had or you didn't. Now I think it's something that happens when you stop worrying about being bad at it." — Priya, post-program reflection</p>
+  </div>
 
   <h2>About Maekido's Art Programs</h2>
-  <p class="bl">Our Mandala and visual art programs run in schools across India. They're designed for students who don't think of themselves as creative — and for students who do. If you want to bring an art program to your school, we'd love to talk.</p>
+
+  <p>Our Mandala and visual art programs run in schools across India. They're designed for students who don't think of themselves as creative — and for students who do. If you want to bring an art program to your school, we'd love to talk.</p>
 
   <div class="tag-list">
-    <span class="tag" style="background:var(--warm);color:var(--ink)">Student Stories</span>
-    <span class="tag" style="background:var(--warm);color:var(--ink)">Mandala Art</span>
-    <span class="tag" style="background:var(--warm);color:var(--ink)">Creative Confidence</span>
-    <span class="tag" style="background:var(--warm);color:var(--ink)">Art Education</span>
-    <span class="tag" style="background:var(--warm);color:var(--ink)">Self-Identity</span>
+    <span class="tag">Student Stories</span>
+    <span class="tag">Mandala Art</span>
+    <span class="tag">Creative Confidence</span>
+    <span class="tag">Art Education</span>
+    <span class="tag">Self-Identity</span>
   </div>
 </div>
 
-<footer>
-  <div class="ft-inner">
-    <div class="ft-top">
-      <div class="ft-brand">
-        <img class="ft-logo-slot" src="../assets/images/logo-white.svg" alt="Maekido" style="display:block;width:155px;height:auto">
-        <p>Bringing design thinking, creativity, and real-world skills to schools across India.<br>Future Makers Start Here.</p>
-        <div class="social-row"><a class="soc" href="#" onclick="showToast('Instagram')" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.42.56.22.96.48 1.38.9.42.42.68.82.9 1.38.17.42.37 1.06.42 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.42 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.17-1.06.37-2.23.42-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.42a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.17-.42-.37-1.06-.42-2.23C3.41 15.58 3.4 15.2 3.4 12s.01-3.58.07-4.85c.05-1.17.25-1.8.42-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.17 1.06-.37 2.23-.42C8.42 2.21 8.8 2.2 12 2.2zm0 1.62c-3.15 0-3.52.01-4.76.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.05 1.15.25 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.16 1.04.36 2.19.41 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c1.15-.05 1.77-.25 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.05-1.15-.25-1.77-.41-2.19a3.63 3.63 0 0 0-.88-1.35 3.63 3.63 0 0 0-1.35-.88c-.42-.16-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.42 5.42 0 1 1 0 10.84 5.42 5.42 0 0 1 0-10.84zm0 1.62a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6zm5.6-.43a1.27 1.27 0 1 1-2.54 0 1.27 1.27 0 0 1 2.54 0z"/></svg></a><a class="soc" href="#" onclick="showToast('Facebook')" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a><a class="soc" href="#" onclick="showToast('LinkedIn')" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zm1.78 13.02H3.55V9h3.57v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.74v20.5C0 23.2.8 24 1.77 24h20.45c.98 0 1.78-.8 1.78-1.76V1.74C24 .78 23.2 0 22.22 0z"/></svg></a><a class="soc" href="#" onclick="showToast('WhatsApp: +91 720 770 9444')" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.5 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.57-.49-.5-.67-.5l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.04 21.5h-.01a9.4 9.4 0 0 1-4.79-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.38 9.38 0 0 1-1.44-5A9.43 9.43 0 0 1 18.7 5.84a9.37 9.37 0 0 1 2.76 6.65 9.43 9.43 0 0 1-9.42 9.01zM20.52 3.99A11.2 11.2 0 0 0 12.04.5 11.27 11.27 0 0 0 .77 11.76c0 1.98.52 3.92 1.5 5.63L.68 23.5l6.25-1.64a11.23 11.23 0 0 0 5.37 1.37h.01a11.27 11.27 0 0 0 11.27-11.26c0-3.01-1.17-5.84-3.06-7.98z"/></svg></a><a class="soc" href="#" onclick="showToast('YouTube')" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14C4.5 20.45 12 20.45 12 20.45s7.5 0 9.38-.51a3.02 3.02 0 0 0 2.12-2.14A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.6 15.57V8.43L15.8 12l-6.2 3.57z"/></svg></a></div>
-      </div>
-      <div class="ft-col"><h4>Programs</h4><ul><li><a href="../programs.html">UI/UX Design</a></li><li><a href="../programs.html">Gamers Lab</a></li><li><a href="../programs.html">Makers Canvas</a></li><li><a href="../programs.html">Project Abhay</a></li><li><a href="../programs.html">Design Thinking</a></li><li><a href="../programs.html">Robotics</a></li></ul></div>
-      <div class="ft-col"><h4>School Programs</h4><ul><li><a href="../partner.html">Partner With Us</a></li><li><a href="../contact.html">Schedule a Visit</a></li><li><a href="../summer.html">Summer 2026 Recap</a></li><li><a href="../index.html#testimonials">Testimonials</a></li></ul></div>
-      <div class="ft-col"><h4>Company</h4><ul><li><a href="../about.html">About Maekido</a></li><li><a href="../blog.html">Blog</a></li><li><a href="../contact.html">Contact Us</a></li><li><a href="mailto:contact@maekido.in">contact@maekido.in</a></li><li><a onclick="showToast('Hyderabad, India 📍')">Hyderabad, India</a></li></ul></div>
-    </div>
-    <div class="ft-bottom"><span>© 2026 Maekido. Made with ❤️ in Hyderabad.</span><div class="social-row"><a class="btn btn-ghost btn-sm" href="../partner.html">Partner With Us</a></div></div>
-  </div>
+<section class="article-cta">
+  <div class="ac-eyebrow">• Bring Maekido to your school</div>
+  <h3>Want stories like this from your own classrooms?</h3>
+  <p>We run in-school and after-school creative programs across India. Let's make something with your students.</p>
+  <a href="../index.html#enroll" class="ac-btn">Partner With Us →</a>
+</section>
+
+<footer class="bfooter">
+  © 2026 <span class="logo">maekido</span> · Knowledge that Moves, Creation that Stays · <a href="../index.html#blog">More stories →</a>
 </footer>
 
-<script src="../assets/js/config.js"></script>
-<script src="../assets/js/main.js"></script>
-<script src="../assets/js/forms.js"></script>
 </body>
 </html>
